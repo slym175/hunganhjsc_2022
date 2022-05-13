@@ -1,0 +1,28 @@
+2022-05-13T02:59:43+00:00 CRITICAL Uncaught Error: Call to undefined function hunganhjsc_posted_on() in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content.php:25
+Stack trace:
+#0 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template.php(772): require()
+#1 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template.php(716): load_template('D:\\thaihongpham...', false, Array)
+#2 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\index.php(31): get_template_part('template-parts/...', 'post')
+#4 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template-loader.php(106): include('D:\\thaihongpham...')
+#5 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-blog-header.php(19): require_once('D:\\thaihongpham...')
+#6 D:\thaihongpham\htdocs\hunganhjsc_2022\index.php(17): require('D:\\thaihongpham...')
+#7 {main}
+  thrown in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content.php on line 25
+
+2022-05-13T03:00:39+00:00 CRITICAL Uncaught Error: Call to undefined function hunganhjsc_entry_footer() in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content.php:59
+Stack trace:
+#0 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template.php(772): require()
+#1 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template.php(716): load_template('D:\\thaihongpham...', false, Array)
+#2 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\index.php(31): get_template_part('template-parts/...', 'post')
+#4 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template-loader.php(106): include('D:\\thaihongpham...')
+#5 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-blog-header.php(19): require_once('D:\\thaihongpham...')
+#6 D:\thaihongpham\htdocs\hunganhjsc_2022\index.php(17): require('D:\\thaihongpham...')
+#7 {main}
+  thrown in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content.php on line 59
+
+2022-05-13T03:49:11+00:00 CRITICAL syntax error, unexpected identifier "wp_style_add_data" in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\functions.php on line 103
+
+2022-05-13T04:06:12+00:00 CRITICAL syntax error, unexpected identifier "wp_enqueue_style" in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\functions.php on line 103
+

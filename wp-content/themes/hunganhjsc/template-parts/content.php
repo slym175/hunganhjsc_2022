@@ -22,14 +22,12 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				hunganhjsc_posted_on();
-				hunganhjsc_posted_by();
+				// hunganhjsc_posted_on();
+				// hunganhjsc_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php hunganhjsc_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -58,6 +56,5 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php hunganhjsc_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
