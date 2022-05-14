@@ -3,19 +3,19 @@ global $nanoCategoryHelper;
 
 $menuLocations = get_nav_menu_locations();
 
-$menuNameOne = wp_get_nav_menu_name('footerLocationOne');
+$menuNameTwo = wp_get_nav_menu_name('footerLocationTwo');
 
 
-$menuId = $menuLocations['footerLocationOne'];
+$menuId = $menuLocations['footerLocationTwo'];
 
-$menu1 = $nanoCategoryHelper::nav_menu_object_tree(wp_get_nav_menu_items($menuId));
+$menu2 = $nanoCategoryHelper::nav_menu_object_tree(wp_get_nav_menu_items($menuId));
 ?>
 
 <ul class="list-unstyled">
-    <li> <?php echo $menuNameOne ?></li>
+    <li> <?php echo $menuNameTwo ?></li>
 
-    <?php foreach($menu1 as $menuItemOne) : ?>
+    <?php foreach($menu2 as $menuItemTwo) : ?>
 
-    <li><a href="<?php echo $menuItemOne->url ?>" title="<?php echo $menuItemOne->title ?>" ><?php echo $menuItemOne->title ?></a></li>
+    <li><a href="<?php echo $menuItemTwo->url ?>" title="<?php echo $menuItemTwo->title ?>" ><?php echo $menuItemTwo->title ?></a></li>
     <?php endforeach; ?>
 </ul>

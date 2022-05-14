@@ -66,7 +66,8 @@ function hunganhjsc_setup() {
 //    set_post_thumbnail_size(400, 225);
     register_nav_menus(
         array(
-            'menu-primary' => esc_html__('Menu chính', _S_TEXTDOMAIN),
+                            //L
+            // 'menu-primary' => esc_html__('Menu chính', _S_TEXTDOMAIN),
             'headerMenuLocation' => esc_html__('Header Menu Location', _S_TEXTDOMAIN),
             'footerLocationOne' => esc_html__('Footer Location One',_S_TEXTDOMAIN),
             'footerLocationTwo' => esc_html__('Footer Location Two',_S_TEXTDOMAIN),
