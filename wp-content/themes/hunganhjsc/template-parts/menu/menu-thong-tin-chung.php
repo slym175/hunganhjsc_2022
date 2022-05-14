@@ -6,7 +6,11 @@ $menuLocations = get_nav_menu_locations();
 $menuNameTwo = wp_get_nav_menu_name('footerLocationTwo');
 
 
+<<<<<<< Updated upstream
 $menuId = $menuLocations['footerLocationTwo'];
+=======
+$menuId = $menuLocations['footerLocation'];
+>>>>>>> Stashed changes
 
 $menu2 = $nanoCategoryHelper::nav_menu_object_tree(wp_get_nav_menu_items($menuId));
 ?>
