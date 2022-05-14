@@ -4,7 +4,7 @@
 
         <div class="hotline">
 
-            <div class="container"><img class="lazyload" src="/assets/imgs/icons/icon-supportb90c.gif')"
+            <div class="container"><img class="lazyload" src="<?php echo get_theme_file_uri('/assets/imgs/icons/icon-supportb90c.gif')?>"
                     alt="Báo giá vòng bi SKF" width="35" height="32"> <a href="bao-gia-vong-bi-skf-chinh-hang.html"
                     title="báo giá vòng bi SKF chính hãng">BÁO GIÁ VÒNG
                     BI SKF CHÍNH HÃNG</a> - <span class="dot" style="margin-left: 5px; margin-top: -4px;"><span
@@ -100,50 +100,50 @@
                         <a rel="nofollow" href="https://www.facebook.com/skfngocanh.vn" target="_blank"><span
                                 style="margin-right: 10px">
 
-                                <img src="<?php echo get_theme_file_uri('/assets/icon-social/facebook.png') ?> "
+                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/facebook.png') ?> "
                                     width="24" height="24" alt="Facebook"> </span></a>
 
                         <a rel="nofollow" href="https://twitter.com/skfngocanh" target="_blank"><span
                                 style="margin-right: 10px">
 
-                                <img src="<?php echo get_theme_file_uri('/assets/icon-social/twitter.png') ?>"
+                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/twitter.png') ?>"
                                     width="24" height="24" alt="twitter"> </span></a>
 
 
                         <a rel="nofollow" href="http://www.youtube.com/c/SKFNgocAnh" target="_blank"><span
                                 style="margin-right: 10px">
 
-                                <img src="<?php echo get_theme_file_uri('/assets/icon-social/youtube.png') ?>"
+                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/youtube.png') ?>"
                                     width="24" height="24" alt="youtube"> </span></a>
 
                         <a rel="nofollow" href="https://www.tiktok.com/@skfngocanh" target="_blank"><span
                                 style="margin-right: 10px">
 
-                                <img src="<?php echo get_theme_file_uri('/assets/icon-social/tiktok.png') ?>" width="24"
+                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/tiktok.png') ?>" width="24"
                                     height="24" alt="tiktok">
                             </span></a>
 
 
                         <a rel="nofollow" href="https://www.instagram.com/skfngocanh" target="_blank"><span
                                 style="margin-right: 10px">
-                                <img src="<?php echo get_theme_file_uri('/assets/icon-social/instagram.png') ?>"
+                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/instagram.png') ?>"
                                     width="24" height="24" alt="instagram"> </span></a>
 
                         <a href="https://www.linkedin.com/in/skfngocanh/" target="_blank" rel="nofollow"><span
-[14/05/2022 08:20:32] Phạm Tiến Doanh: style="margin-right: 10px">
-                                <img src="<?php echo get_theme_file_uri('/assets/icon-social/linkedin.png') ?>"
+                                 style="margin-right: 10px">
+                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/linkedin.png') ?>"
                                     width="24" height="24" alt="linkedin"> </span></a>
 
                         <a rel="nofollow" href="https://www.pinterest.com/skfngocanh/" target="_blank"><span
                                 style="margin-right: 10px">
-                                <img src="<?php echo get_theme_file_uri('/assets/icon-social/pinterest.png') ?>"
+                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/pinterest.png') ?>"
                                     width="24" height="24" alt="pinterest">
                             </span></a>
 
 
                         <a rel="nofollow" href="https://www.tumblr.com/blog/skfngocanh" target="_blank"><span
                                 style="margin-right: 10px">
-                                <img src="<?php echo get_theme_file_uri('/assets/icon-social/tumblr.png') ?>" width="24"
+                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/tumblr.png') ?>" width="24"
                                     height="24" alt="tumblr">
                             </span></a>
 
