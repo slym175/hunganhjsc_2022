@@ -1,10 +1,9 @@
 <?php
 global $nanoCategoryHelper;
-
+//demo
 $menuLocations = get_nav_menu_locations();
 
 $menuNameThree = wp_get_nav_menu_name('footerLocationThree');
-//hứadjál;d
 
 $menuId = $menuLocations['footerLocationThree'];
 $menu3 = $nanoCategoryHelper::nav_menu_object_tree(wp_get_nav_menu_items($menuId));
