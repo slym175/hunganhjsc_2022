@@ -30,7 +30,7 @@
                         <a class="navbar-brand" href="https://ngocanh.com"><img width="165" height="42" class="lazyload" src="https://ngocanh.com/public/assets/logo.png?v=2.5.9" alt="SKF Ngọc Anh" title="SKF Ngọc Anh"></a>
                         <ul class="nav navbar-nav visible-xs search-mobile">
                             <li class="cart">
-                                <a href="#" data-toggle="collapse" data-target="#bs-navbar-collapse-search" aria-expanded="false"><img class="lazyload" src="./assets/imgs/icon-search-white.png" style="height:24px;width:24px" alt="Tìm kiếm"></a>
+                                <a href="#" data-toggle="collapse" data-target="#bs-navbar-collapse-search" aria-expanded="false"><img class="lazyload" src="./assets/assets/imgs/icon-search-white.png" style="height:24px;width:24px" alt="Tìm kiếm"></a>
                             </li>
                         </ul>
                     </div>
@@ -45,7 +45,7 @@
                                 <input type="text" name="q" value="" class="form-control" placeholder="Nhập tên SP cần tìm">
                                 <span class="input-group-btn">
                                     <button class=" btn btn-link">
-                                        <img class="lazyload" src="https://ngocanh.com/public/assets/imgs/icon-search-white.png?v=2.5.9" alt="Tìm kiếm" style="height:24px;width:24px">
+                                        <img class="lazyload" src="https://ngocanh.com/public/assets/assets/imgs/icon-search-white.png?v=2.5.9" alt="Tìm kiếm" style="height:24px;width:24px">
                                     </button>
                                 </span>
                             </div>
@@ -64,42 +64,42 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="item active ">
                         <a href="san-pham/vong-bi-skf.html" title="Vòng bi SKF chính hãng">
-                            <img src="public/uploads/images/7730/vong-bi-skf.jpg" width="1905" height="477" class="lazyload img-full" alt="Vòng bi SKF chính hãng">
+                            <img src="<?php echo get_theme_file_uri('/assets/imgs/vong-bi-skf.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Vòng bi SKF chính hãng">
                         </a>
                     </div>
                     <div class="item ">
                         <a href="san-pham/mo-boi-tron-SKF.html" title="Mỡ SKF chính hãng">
-                            <img src="public/uploads/images/7731/mo-boi-tron-skf.jpg" width="1905" height="477" class="lazyload img-full" alt="Mỡ SKF chính hãng">
+                            <img src="<?php echo get_theme_file_uri('/assets/imgs/mo-boi-tron-skf.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Mỡ SKF chính hãng">
                         </a>
                     </div>
                     <div class="item ">
                         <a href="san-pham/goi-do-skf.html" title="Gối đỡ SKF chính hãng">
-                            <img src="public/uploads/images/7732/goi-do-skf.jpg" width="1905" height="477" class="lazyload img-full" alt="Gối đỡ SKF chính hãng">
+                            <img src="<?php echo get_theme_file_uri('/assets/imgs/goi-do-skf.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Gối đỡ SKF chính hãng">
                         </a>
                     </div>
                     <div class="item ">
                         <a href="san-pham/dung-cu-skf.html" title="Dụng cụ SKF chính hãng">
-                            <img src="public/uploads/images/7733/dung-cu-bao-tri.jpg" width="1905" height="477" class="lazyload img-full" alt="Dụng cụ SKF chính hãng">
+                            <img src="<?php echo get_theme_file_uri('/assets/imgs/dung-cu-bao-tri.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Dụng cụ SKF chính hãng">
                         </a>
                     </div>
                     <div class="item ">
                         <a href="san-pham/phot-chan-skf.html" title="Phớt chặn SKF chính hãng">
-                            <img src="public/uploads/images/7734/phot-chan-dau-skf.jpg" width="1905" height="477" class="lazyload img-full" alt="Phớt chặn SKF chính hãng">
+                            <img src="<?php echo get_theme_file_uri('/assets/imgs/phot-chan-dau-skf.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Phớt chặn SKF chính hãng">
                         </a>
                     </div>
                     <div class="item ">
                         <a href="dai-ly-uy-quyen-vong-bi-skf.html" title="Đại lý ủy quyền vòng bi SKF chính hãng">
-                            <img src="public/uploads/images/7735/dai-ly-uy-quyen-skf.jpg" width="1905" height="477" class="lazyload img-full" alt="Đại lý ủy quyền vòng bi SKF chính hãng">
+                            <img src="<?php echo get_theme_file_uri('/assets/imgs/dai-ly-uy-quyen-skf.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Đại lý ủy quyền vòng bi SKF chính hãng">
                         </a>
                     </div>
                     <div class="item ">
                         <a href="tai-lieu-vong-bi/SKF-Authenticate.html" title="Kiểm tra vòng bi SKF giả (Fake)">
-                            <img src="public/uploads/images/7736/skf-authenticate.jpg" width="1905" height="477" class="lazyload img-full" alt="Kiểm tra vòng bi SKF giả (Fake)">
+                            <img src="<?php echo get_theme_file_uri('/assets/imgs/skf-authenticate.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Kiểm tra vòng bi SKF giả (Fake)">
                         </a>
                     </div>
                     <div class="item ">
                         <a href="bao-gia-vong-bi-skf-chinh-hang.html" title="Giao hàng tận nơi 24/7">
-                            <img src="public/uploads/images/7737/giao-hang-toan-quoc.jpg" width="1905" height="477" class="lazyload img-full" alt="Giao hàng tận nơi 24/7">
+                            <img src="<?php echo get_theme_file_uri('/assets/imgs/giao-hang-toan-quoc.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Giao hàng tận nơi 24/7">
                         </a>
                     </div>
                 </div>
