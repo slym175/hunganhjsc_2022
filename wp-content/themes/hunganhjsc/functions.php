@@ -67,7 +67,10 @@ function hunganhjsc_setup() {
     register_nav_menus(
         array(
             'menu-primary' => esc_html__('Menu chính', _S_TEXTDOMAIN),
-            'headerMenuLocation' => esc_html__('Header Menu Location', _S_TEXTDOMAIN)
+            'headerMenuLocation' => esc_html__('Header Menu Location', _S_TEXTDOMAIN),
+            'footerLocationOne' => esc_html__('Footer Location One',_S_TEXTDOMAIN),
+            'footerLocationTwo' => esc_html__('Footer Location Two',_S_TEXTDOMAIN),
+            'footerLocationThree' => esc_html__('Footer Location Three',_S_TEXTDOMAIN),
         )
     );
 }
