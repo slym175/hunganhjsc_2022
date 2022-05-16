@@ -162,3 +162,14 @@ span.stButton:first-child {
     width: 100%;
     height: auto !important;
 }
+
+.width-125px{
+    width: 125px !important;
+    height:47px;
+    object-fit: cover;
+}
+.width-15px{
+    width: 25px !important;
+    height:25px !important;
+    object-fit: cover;
+}

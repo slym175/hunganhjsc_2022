@@ -1,10 +1,10 @@
-[14/05/2022 08:15:27] Phạm Hồng Thái: [Tập tin: Phạm Hồng Thái.docx]
-[14/05/2022 08:20:30] Phạm Tiến Doanh: <footer>
+ <footer>
     <div class="foot-top">
 
         <div class="hotline">
 
-            <div class="container"><img class="lazyload" src="<?php echo get_theme_file_uri('/assets/imgs/icons/icon-supportb90c.gif')?>"
+            <div class="container"><img class="lazyload"
+                    src="<?php echo get_theme_file_uri('/assets/imgs/icons/icon-supportb90c.gif')?>"
                     alt="Báo giá vòng bi SKF" width="35" height="32"> <a href="bao-gia-vong-bi-skf-chinh-hang.html"
                     title="báo giá vòng bi SKF chính hãng">BÁO GIÁ VÒNG
                     BI SKF CHÍNH HÃNG</a> - <span class="dot" style="margin-left: 5px; margin-top: -4px;"><span
@@ -41,7 +41,8 @@
                                 src="<?php echo get_theme_file_uri('/assets/imgs/icons/recycle.svg') ?>"
                                 title="bảo hành vòng bi linh hoạt" alt="bảo hành vòng bi linh hoạt" width="30"
                                 height="30"></span>
-[14/05/2022 08:20:31] Phạm Tiến Doanh: <span class="text" style="font-weight: 500; font-size: 14px;  text-transform: uppercase;">bảo
+                        [14/05/2022 08:20:31] Phạm Tiến Doanh: <span class="text"
+                            style="font-weight: 500; font-size: 14px;  text-transform: uppercase;">bảo
                             hành chính
                             hãng</span>
                     </div>
@@ -63,106 +64,81 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-info">
-                    <strong class="name" style="color: #0059a5">Công ty CP Vật Tư Thương Mại NGỌC ANH</strong>
-                    <div style="padding-bottom: 5px; padding-top: 3px;"><a href="dai-ly-uy-quyen-vong-bi-skf.html"><img
-                                class="lazyload" src="<?php echo get_theme_file_uri('/assets/imgs/dluq-dm.svg') ?> "
-                                width="311" height="40" alt="Đại lý ủy quyền SKF chính hãng"></a></div>
-                    <div class="info">
-                        <a href="dai-ly-uy-quyen-vong-bi-skf.html" title="Đại lý ủy quyền vòng bi chính hãng"><span
-                                style="font-weight: 500; font-size: 14px; color: #000000; text-transform: uppercase;">SKF
-                                NGỌC ANH - ĐẠI LÝ ỦY QUYỀN VÒNG BI SKF CHÍNH HÃNG</span></a>
-                        <a title="SKF Authorized Distributor - SKF Việt Nam"
-                            href="https://www.skf.com/vn/support/find-a-distributor" target="_blank"
-                            rel="nofollow"><span style="font-size: 12px; font-weight: 400; color: #000;">SKF
-                                Authorized Distributor</span></a> - Phân phối các sản phẩm SKF chính hãng ®
-                        Website: <strong>NGOCANH.COM</strong> - Email: <a href="mailto:info@ngocanh.com" target="_top"
-                            rel="nofollow">info@ngocanh.com</a>
+                    <strong class="name" style="color: #0059a5"><?php echo get_field("site_title",'option') ?></strong>
+                    <div style="padding-bottom: 5px; padding-top: 3px;">
+                        <?php 
+                            $idImage = get_field('site_file_mage','option');
+                            foreach($idImage as $key=>$idItem ){
+                            }
+                        ?>
 
-                        Hotline: <a href="tel:096 123 8558" title="báo giá vòng bi SKF chính hãng" rel="nofollow">096
-                            123 8558</a> - <a href="tel:033 999 5999" title="báo giá vòng bi SKF chính hãng"
-                            rel="nofollow">033 999 5999</a> - <a href="tel:0763 356 999"
-                            title="báo giá vòng bi SKF chính hãng" rel="nofollow">0763 356
-                            999</a>
-[14/05/2022 08:20:32] Phạm Tiến Doanh: [ <strong>VP Hà Nội</strong> ]
-                        <span style="font-size: 12px; font-weight: 400; color: #000;">LK 01.10, Liền kề Tổ 9 Mỗ Lao,
-                            Phường Mộ Lao, Hà Đông, Hà Nội</span>
-                        Tel: <a href="tel:024 85 865 866" rel="nofollow">(024) 85 865 866</a>
+                        <a href="dai-ly-uy-quyen-vong-bi-skf.html">
+                            <img class="lazyload" src="<?php echo wp_get_attachment_image($idItem,'full') ?>
+                        </a>
+                    </div>
 
-                        [ <strong>VP Quảng Ninh</strong> ]
-                        <span style="font-size: 12px; font-weight: 400; color: #000;">D908 - Khu đô thị MonBay,
-                            Phường Hồng Hải, Hạ Long, Quảng Ninh</span>
-                        Tel: <a href="tel:02036559395" rel="nofollow">(0203) 6 559 395</a>
+
+                    <div class=" info">
+                            <?php
+                        $phones = get_field("hotline",'option');
+                        $phoneItem = explode(",", $phones);
+
+                        ?>
+                            <a href="dai-ly-uy-quyen-vong-bi-skf.html" title="Đại lý ủy quyền vòng bi chính hãng"><span
+                                    style="font-weight: 500; font-size: 14px; color: #000000; text-transform: uppercase;"><?php echo get_field("ngoc_anh_skf",'option') ?></span></a>
+                            <br>
+                            <a title="SKF Authorized Distributor - SKF Việt Nam"
+                                href="https://www.skf.com/vn/support/find-a-distributor" target="_blank"
+                                rel="nofollow"><span
+                                    style="font-size: 12px; font-weight: 400; color: #000;"><?php echo get_field("authorzired",'option') ?></span></a>
+                            - <?php echo get_field("phan_phoi",'option') ?>
+                            Website: <strong><?php echo get_field("authorzired",'option') ?></strong> - Email: <a
+                                href="mailto:info@ngocanh.com" target="_top" rel="nofollow">info@ngocanh.com</a>
+                            <br>
+                            Hotline: <a href="tel:<?php echo $phoneItem[0] ?>" title="báo giá vòng bi SKF chính hãng"
+                                rel="nofollow"><?php echo $phoneItem[0] ?></a> - <a
+                                href="tel:<?php echo $phoneItem[1] ?>" title="báo giá vòng bi SKF chính hãng"
+                                rel="nofollow"><?php echo $phoneItem[1] ?></a> - <a
+                                href="tel:<?php echo $phoneItem[2] ?>" title="báo giá vòng bi SKF chính hãng"
+                                rel="nofollow"><?php echo $phoneItem[2] ?></a>
+                            <?php 
+                                $chiNhanh =  get_field('chi_nhanh','option') ;
+                                print_r($chiNhanh);
+                                
+                            ?>
+
+
+                            <span style="font-size: 12px; font-weight: 400; color: #000;">
+                                <br>
+                                    LK 01.10, Liền kề Tổ 9 Mỗ Lao,
+                                    Phường Mộ Lao, Hà Đông, Hà Nội
+                            </span>
+                            <br>
+                            Tel: <a href="tel:024 85 865 866" rel="nofollow">(024) 85 865 866</a>
+                            <br>
+                            [ <strong>VP Quảng Ninh</strong> ]
+                            <span style="font-size: 12px; font-weight: 400; color: #000;">D908 - Khu đô thị MonBay,
+                                Phường Hồng Hải, Hạ Long, Quảng Ninh</span>
+                            Tel: <a href="tel:02036559395" rel="nofollow">(0203) 6 559 395</a><br>
                     </div>
 
                     <span style="font-size: 11px; color: #000; font-weight: 300;">Kết nối với chúng
                         tôi</span>
                     <div class="social-icons" style="padding: 5px 0 0;">
-                        <a rel="nofollow" href="https://www.facebook.com/skfngocanh.vn" target="_blank"><span
-                                style="margin-right: 10px">
-
-                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/facebook.png') ?> "
-                                    width="24" height="24" alt="Facebook"> </span></a>
-
-                        <a rel="nofollow" href="https://twitter.com/skfngocanh" target="_blank"><span
-                                style="margin-right: 10px">
-
-                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/twitter.png') ?>"
-                                    width="24" height="24" alt="twitter"> </span></a>
-
-
-                        <a rel="nofollow" href="http://www.youtube.com/c/SKFNgocAnh" target="_blank"><span
-                                style="margin-right: 10px">
-
-                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/youtube.png') ?>"
-                                    width="24" height="24" alt="youtube"> </span></a>
-
-                        <a rel="nofollow" href="https://www.tiktok.com/@skfngocanh" target="_blank"><span
-                                style="margin-right: 10px">
-
-                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/tiktok.png') ?>" width="24"
-                                    height="24" alt="tiktok">
-                            </span></a>
-
-
-                        <a rel="nofollow" href="https://www.instagram.com/skfngocanh" target="_blank"><span
-                                style="margin-right: 10px">
-                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/instagram.png') ?>"
-                                    width="24" height="24" alt="instagram"> </span></a>
-
-                        <a href="https://www.linkedin.com/in/skfngocanh/" target="_blank" rel="nofollow"><span
-                                 style="margin-right: 10px">
-                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/linkedin.png') ?>"
-                                    width="24" height="24" alt="linkedin"> </span></a>
-
-                        <a rel="nofollow" href="https://www.pinterest.com/skfngocanh/" target="_blank"><span
-                                style="margin-right: 10px">
-                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/pinterest.png') ?>"
-                                    width="24" height="24" alt="pinterest">
-                            </span></a>
-
-
-                        <a rel="nofollow" href="https://www.tumblr.com/blog/skfngocanh" target="_blank"><span
-                                style="margin-right: 10px">
-                                <img src="<?php echo get_theme_file_uri('/assets/imgs/icon-social/tumblr.png') ?>" width="24"
-                                    height="24" alt="tumblr">
-                            </span></a>
-
-
+                        <?php  $idIconImages = get_field('icon_mang_xa_hoi','option');
+                            foreach ($idIconImages as $idIconImagesItem){
+                               echo wp_get_attachment_image($idIconImagesItem,'full', false ,array( 'class' => 'width-15px', 'sizes' => 'width-15'));
+                            }
+                        ?>
                     </div>
 
-
-
-                    [ Đối tác - Dự án ]
-                    <a href="mailto:hoptac@ngocanh.com" rel="nofollow">hoptac@ngocanh.com</a>
-
-
-                    <a href="http://online.gov.vn/Home/WebDetails/54138" target="_blank" rel="nofollow"><img
-                            alt="Website NgocAnh.com đã đăng ký với Bộ Công Thương"
-                            title="Website NgocAnh.com đã đăng ký với Bộ Công Thương"
-                            src="<?php echo get_theme_file_uri('/assets/imgs/logoSaleNoti.png') ?>" width="125"
-                            height="47"></a>
-
-
+                    <?php 
+                            $idImageS = get_field('image_doi_tac_du_an','option');
+                    ?>
+                    <a href="http://online.gov.vn/Home/WebDetails/54138" target="_blank" rel="nofollow"
+                        style="width:125px">
+                        <?php echo wp_get_attachment_image($idImageS,'full', false ,array( 'class' => 'width-125px', 'sizes' => 'width-12')) ?>
+                    </a>
                 </div>
                 <div class="col-md-7 menus">
                     <div class="row">
@@ -170,7 +146,7 @@
                             <?php echo get_template_part('template-parts/menu/menu', 've-chung-toi')  ?>
                         </div>
                         <div class="col-md-4 col-sm-4 col 2" style="color: #0059a5">
-                        <?php echo get_template_part('template-parts/menu/menu', 'san-pham-skf')  ?>
+                            <?php echo get_template_part('template-parts/menu/menu', 'san-pham-skf')  ?>
 
                         </div>
 
@@ -191,7 +167,8 @@
                 <i class="glyphicon glyphicon-bookmark"></i> Hot keys:
 
                 <a href="san-pham/vong-bi-cau.html" title="Vòng bi cầu">Vòng bi cầu</a>
-[14/05/2022 08:20:33] Phạm Tiến Doanh: <a href="san-pham/vong-bi-con.html" title="Vòng bi côn">Vòng bi côn</a>
+                [14/05/2022 08:20:33] Phạm Tiến Doanh: <a href="san-pham/vong-bi-con.html" title="Vòng bi côn">Vòng bi
+                    côn</a>
                 <a href="san-pham/vong-bi-tang-trong.html" title="Vòng bi tang trống">Vòng bi tang trống</a>
                 <a href="san-pham/vong-bi-tu-lua.html" title="Vòng bi đỡ tự lựa">Vòng bi đỡ tự lựa</a>
                 <a href="san-pham/vong-bi-dua-do.html" title="Vòng bi đũa đỡ">Vòng bi đũa đỡ</a>
@@ -226,7 +203,8 @@
                 <a href="http://timvongbi.com/" title="Tra cứu vòng bi" target="_blank">Tra cứu vòng bi</a>
                 <a href="dai-ly-uy-quyen-vong-bi-skf.html" title="Đại lý ủy quyền SKF">Đại lý ủy quyền SKF</a>
                 <a href="san-pham/vong-bi-skf.html" title="Vòng bi SKF">Vòng bi SKF</a>
-[14/05/2022 08:20:34] Phạm Tiến Doanh: <a href="tai-lieu-vong-bi/SKF-Authenticate.html" title="SKF Authenticate App">SKF Authenticate
+                [14/05/2022 08:20:34] Phạm Tiến Doanh: <a href="tai-lieu-vong-bi/SKF-Authenticate.html"
+                    title="SKF Authenticate App">SKF Authenticate
                     App</a>
                 <a href="top-skf-ngocanh.html" title="Top vòng bi SKF bán chạy">Top vòng bi SKF bán chạy</a>
                 <a href="bao-chi-noi-ve-chung-toi/index.html" title="Báo chí nói về SKF Ngọc Anh">Báo chí nói về SKF
