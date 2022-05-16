@@ -104,6 +104,10 @@
                             <?php 
                                 $chiNhanh =  get_field('chi_nhanh','option') ;
                                 print_r($chiNhanh);
+                                foreach ($chiNhanh as $chiNhanhItem){?>
+                                     [ <strong>$chiNhanhItem->name</strong> ]
+                                    
+                               <?php }
                                 
                             ?>
 
