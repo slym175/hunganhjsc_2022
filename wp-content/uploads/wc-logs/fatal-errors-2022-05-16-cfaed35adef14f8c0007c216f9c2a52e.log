@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2022-05-16T09:58:24+00:00 CRITICAL syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 174
 
 2022-05-16T09:58:24+00:00 CRITICAL syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 174
@@ -5,4 +6,95 @@
 2022-05-16T09:58:24+00:00 CRITICAL syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 174
 
 2022-05-16T09:58:25+00:00 CRITICAL syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 174
+=======
+2022-05-16T09:02:45+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:02:51+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:02:55+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:02:56+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:02:56+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:02:56+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:02:57+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:02:57+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:03:00+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:03:00+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:03:00+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:03:00+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:03:01+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:03:02+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\footer.php on line 173
+
+2022-05-16T09:38:20+00:00 CRITICAL Cannot redeclare the_category() (previously declared in C:\xampp\htdocs\hunganhjsc_2022\wp-includes\category-template.php:274) in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 26
+
+2022-05-16T09:46:19+00:00 CRITICAL Uncaught Error: Call to undefined function get_query_object() in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php:24
+Stack trace:
+#0 C:\xampp\htdocs\hunganhjsc_2022\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\hunganhjsc_2022\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\hunganhjsc_2022\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\hunganhjsc_2022\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 24
+
+2022-05-16T09:47:01+00:00 CRITICAL Uncaught Error: Call to undefined function get_queryed_object() in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php:24
+Stack trace:
+#0 C:\xampp\htdocs\hunganhjsc_2022\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\hunganhjsc_2022\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\hunganhjsc_2022\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\hunganhjsc_2022\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 24
+
+2022-05-16T09:47:23+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 24
+
+2022-05-16T09:54:50+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 27
+
+2022-05-16T09:55:25+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 27
+
+2022-05-16T09:58:08+00:00 CRITICAL syntax error, unexpected 'print_r' (T_STRING) in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 25
+
+2022-05-16T09:59:56+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php:61
+Stack trace:
+#0 C:\xampp\htdocs\hunganhjsc_2022\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\hunganhjsc_2022\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\hunganhjsc_2022\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\hunganhjsc_2022\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 61
+
+2022-05-16T10:00:18+00:00 CRITICAL syntax error, unexpected 'print_r' (T_STRING) in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 25
+
+2022-05-16T10:01:19+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php:61
+Stack trace:
+#0 C:\xampp\htdocs\hunganhjsc_2022\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\hunganhjsc_2022\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\hunganhjsc_2022\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\hunganhjsc_2022\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 61
+
+2022-05-16T10:03:08+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php:61
+Stack trace:
+#0 C:\xampp\htdocs\hunganhjsc_2022\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\hunganhjsc_2022\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\hunganhjsc_2022\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\hunganhjsc_2022\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\woocommerce\archive-product.php on line 61
+>>>>>>> Stashed changes
 

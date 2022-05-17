@@ -171,5 +171,69 @@ span.stButton:first-child {
 .width-15px{
     width: 25px !important;
     height:25px !important;
+    margin: 5px 5px;
     object-fit: cover;
 }
+<<<<<<< Updated upstream
+=======
+.width-168px{
+    width: 168px !important;
+    object-fit: cover;
+}
+.width-311px{
+    width: 311px !important;
+    object-fit: cover;
+}
+
+
+/* css trang archive */
+@media (min-width: 1024px) {
+    main .list-category {
+        margin-top: 30px;
+    }
+}
+
+main .list-category .cat:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+main .list-category .clearfix3 {
+    clear: both;
+    display: block;
+}
+
+@media (max-width: 767px)and (min-width: 630px) {
+    main .list-category .clearfix2 {
+        clear: both;
+        display: block;
+    }
+
+    main .list-category .clearfix3 {
+        display: none;
+        clear: none;
+    }
+
+    main .list-category .cat .txt {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 629px) {
+    main .list-category .cat {
+        margin-bottom: 28px;
+    }
+
+    main .list-category .cat.col-xs-6 {
+        width: 100%;
+        float: none;
+    }
+
+    main .list-category .cat .txt {
+        font-size: 13px;
+    }
+}
+
+/* end css archive */
+>>>>>>> Stashed changes
