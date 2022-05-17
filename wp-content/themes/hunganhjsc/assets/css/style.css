@@ -828,7 +828,8 @@ header .hdr-top .navbar-default.navbar-pc .navbar-brand {
 }
 
 header .hdr-top .navbar-default.navbar-pc .navbar-brand img {
-    height: 42px
+    max-height: 42px;
+    width: auto;
 }
 
 header .hdr-top .navbar-default.navbar-pc ul.nav li a {
@@ -1057,7 +1058,7 @@ header .hdr-top .navbar-default.navbar-pc ul.nav > li:hover > a:after {
 
 @media (min-width: 768px)and (max-width: 991px) {
     header .hdr-top .navbar-default.navbar-pc .navbar-header {
-        margin-right: 60px
+        margin-right: 0px
     }
 
     header .hdr-top .navbar-default.navbar-pc .navbar-header .navbar-brand {

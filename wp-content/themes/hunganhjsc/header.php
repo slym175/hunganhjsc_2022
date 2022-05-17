@@ -20,6 +20,10 @@
             <nav class="navbar navbar-default navbar-pc" data-spy="affix" data-offset-top="64">
                 <div class="tbg"></div>
                 <div class="container">
+                <?php   
+                    $custom_logo_id = get_theme_mod( 'custom_logo' );
+                    $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                ?>
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
@@ -27,10 +31,15 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="https://ngocanh.com"><img width="165" height="42" class="lazyload" src="https://ngocanh.com/public/assets/logo.png?v=2.5.9" alt="SKF Ngọc Anh" title="SKF Ngọc Anh"></a>
+                        <a class="navbar-brand" href="">
+                            <?php if($image[0]){ ?>
+                            <img width="165" height="42" class="lazyload" src="<?=$image[0]?>" alt="SKF Ngọc Anh" title="SKF Ngọc Anh">
+                            <?php } ?>
+                        </a>
                         <ul class="nav navbar-nav visible-xs search-mobile">
                             <li class="cart">
-                                <a href="#" data-toggle="collapse" data-target="#bs-navbar-collapse-search" aria-expanded="false"><img class="lazyload" src="./assets/assets/imgs/icon-search-white.png" style="height:24px;width:24px" alt="Tìm kiếm"></a>
+                                
+                                <a href="" data-toggle="collapse" data-target="#bs-navbar-collapse-search" aria-expanded="false"><img class="lazyload" src="./assets/assets/imgs/icon-search-white.png" style="height:24px;width:24px" alt="Tìm kiếm"></a>
                             </li>
                         </ul>
                     </div>
@@ -57,61 +66,5 @@
 
             <nav class="nav-mobile hidden">
             </nav>
-        </div>
-
-        <div class="hdr-btm">
-            <div id="carousel-example-generic" class="carousel slide lazy-load" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active ">
-                        <a href="san-pham/vong-bi-skf.html" title="Vòng bi SKF chính hãng">
-                            <img src="<?php echo get_theme_file_uri('/assets/imgs/vong-bi-skf.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Vòng bi SKF chính hãng">
-                        </a>
-                    </div>
-                    <div class="item ">
-                        <a href="san-pham/mo-boi-tron-SKF.html" title="Mỡ SKF chính hãng">
-                            <img src="<?php echo get_theme_file_uri('/assets/imgs/mo-boi-tron-skf.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Mỡ SKF chính hãng">
-                        </a>
-                    </div>
-                    <div class="item ">
-                        <a href="san-pham/goi-do-skf.html" title="Gối đỡ SKF chính hãng">
-                            <img src="<?php echo get_theme_file_uri('/assets/imgs/goi-do-skf.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Gối đỡ SKF chính hãng">
-                        </a>
-                    </div>
-                    <div class="item ">
-                        <a href="san-pham/dung-cu-skf.html" title="Dụng cụ SKF chính hãng">
-                            <img src="<?php echo get_theme_file_uri('/assets/imgs/dung-cu-bao-tri.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Dụng cụ SKF chính hãng">
-                        </a>
-                    </div>
-                    <div class="item ">
-                        <a href="san-pham/phot-chan-skf.html" title="Phớt chặn SKF chính hãng">
-                            <img src="<?php echo get_theme_file_uri('/assets/imgs/phot-chan-dau-skf.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Phớt chặn SKF chính hãng">
-                        </a>
-                    </div>
-                    <div class="item ">
-                        <a href="dai-ly-uy-quyen-vong-bi-skf.html" title="Đại lý ủy quyền vòng bi SKF chính hãng">
-                            <img src="<?php echo get_theme_file_uri('/assets/imgs/dai-ly-uy-quyen-skf.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Đại lý ủy quyền vòng bi SKF chính hãng">
-                        </a>
-                    </div>
-                    <div class="item ">
-                        <a href="tai-lieu-vong-bi/SKF-Authenticate.html" title="Kiểm tra vòng bi SKF giả (Fake)">
-                            <img src="<?php echo get_theme_file_uri('/assets/imgs/skf-authenticate.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Kiểm tra vòng bi SKF giả (Fake)">
-                        </a>
-                    </div>
-                    <div class="item ">
-                        <a href="bao-gia-vong-bi-skf-chinh-hang.html" title="Giao hàng tận nơi 24/7">
-                            <img src="<?php echo get_theme_file_uri('/assets/imgs/giao-hang-toan-quoc.jpg') ?>" width="1905" height="477" class="lazyload img-full" alt="Giao hàng tận nơi 24/7">
-                        </a>
-                    </div>
-                </div>
-
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
         </div>
     </header>

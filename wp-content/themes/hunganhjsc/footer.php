@@ -66,11 +66,6 @@
                 <div class="col-md-5 col-info">
                     <strong class="name" style="color: #0059a5"><?php echo get_field("site_title",'option') ?></strong>
                     <div style="padding-bottom: 5px; padding-top: 3px;">
-                        <?php 
-                            $idImage = get_field('site_file_mage','option');
-                            foreach($idImage as $key=>$idItem ){
-                            }
-                        ?>
 
                         <a href="dai-ly-uy-quyen-vong-bi-skf.html">
                             <img class="lazyload" src="<?php echo wp_get_attachment_image($idItem,'full') ?>
@@ -101,17 +96,6 @@
                                 rel="nofollow"><?php echo $phoneItem[1] ?></a> - <a
                                 href="tel:<?php echo $phoneItem[2] ?>" title="báo giá vòng bi SKF chính hãng"
                                 rel="nofollow"><?php echo $phoneItem[2] ?></a>
-                            <?php 
-                                $chiNhanh =  get_field('chi_nhanh','option') ;
-                                print_r($chiNhanh);
-                                foreach ($chiNhanh as $chiNhanhItem){?>
-                                     [ <strong>$chiNhanhItem->name</strong> ]
-                                    
-                               <?php }
-                                
-                            ?>
-
-
                             <span style="font-size: 12px; font-weight: 400; color: #000;">
                                 <br>
                                     LK 01.10, Liền kề Tổ 9 Mỗ Lao,
@@ -129,11 +113,6 @@
                     <span style="font-size: 11px; color: #000; font-weight: 300;">Kết nối với chúng
                         tôi</span>
                     <div class="social-icons" style="padding: 5px 0 0;">
-                        <?php  $idIconImages = get_field('icon_mang_xa_hoi','option');
-                            foreach ($idIconImages as $idIconImagesItem){
-                               echo wp_get_attachment_image($idIconImagesItem,'full', false ,array( 'class' => 'width-15px', 'sizes' => 'width-15'));
-                            }
-                        ?>
                     </div>
 
                     <?php 

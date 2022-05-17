@@ -54,7 +54,7 @@
                         $params[] = array('param_name' => $k) + $a;
                     }
                     if (function_exists('vc_map')) {
-                        vc_map(['name' => esc_html__(isset($view['name']) && $view['name'] ? $view['name'] : 'Shortcode: ' . $shortcode, _S_TEXTDOMAIN), 'base' => $shortcode, 'icon' => 'icon-st', 'category' => 'Dr.Allen', 'params' => $params]);
+                        vc_map(['name' => esc_html__(isset($view['name']) && $view['name'] ? $view['name'] : 'Shortcode: ' . $shortcode, _S_TEXTDOMAIN), 'base' => $shortcode, 'icon' => 'icon-st', 'category' => _S_TEXTDOMAIN, 'params' => $params]);
                     }
                 }
             });
@@ -79,42 +79,16 @@
         public function render_shortcode_atts_view()
         {
             return array(
-                'st_home_staticals' => array(
-                    'name' => 'Thông số trang',
+                'st_slide' => array(
+                    'name' => 'Slide trang chủ',
                     'attr' => array(
-                        'title' => array(
-                            'type' => 'textfield',
-                            'heading' => __('Tiêu đề', _S_TEXTDOMAIN)
+                        'slide_items' => array(
+                            'type' => 'attach_images',
+                            'heading' => __('Slide', _S_TEXTDOMAIN)
                         ),
-                        'subtitle' => array(
-                            'type' => 'textfield',
-                            'heading' => __('Tiêu đề phụ', _S_TEXTDOMAIN)
-                        ),
-                        'staticals' => array(
-                            'type' => 'param_group',
-                            'heading' => __('Thông số', _S_TEXTDOMAIN),
-                            'params' => array(
-                                array(
-                                    "type" => "textfield",
-                                    "heading" => __("Tiêu đề", _S_TEXTDOMAIN),
-                                    "param_name" => "name"
-                                ), array(
-                                    'type' => 'attach_image',
-                                    'heading' => __('Ảnh đại diện', _S_TEXTDOMAIN),
-                                    'param_name' => 'avatar'
-                                ), array(
-                                    "type" => "textfield",
-                                    "heading" => __("Số liệu", _S_TEXTDOMAIN),
-                                    "param_name" => "quantity"
-                                ), array(
-                                    "type" => "textfield",
-                                    "heading" => __("Đơn vị", _S_TEXTDOMAIN),
-                                    "param_name" => "unit"
-                                )
-                            )
-                        )
                     ),
-                    'view' => 'template-parts/content/vc_map_templates/home/home-staticals')
+                    'view' => 'template-parts/content/vc_map_templates/home/slide'
+                ),
             );
         }
 

@@ -7,31 +7,33 @@ $menuLocations = get_nav_menu_locations();
 $menuId = $menuLocations['headerMenuLocation'];
 
 $menu = $nanoCategoryHelper::nav_menu_object_tree(wp_get_nav_menu_items($menuId));
-if($menu):
+if ($menu) :
 ?>
 
-<ul class="nav navbar-nav">
+    <ul class="nav navbar-nav">
 
-    <?php foreach($menu as $menuItem): ?>
-        <li class="dropdown <?= $menuItem->children ? 'menu-news' : '' ?> menu-pc">
-            <a href="<?= $menuItem->url ?>" class="<?= $menuItem->children ? 'dropdown-toggle' : '' ?>"><?= $menuItem->title ?></a>
+        <?php foreach ($menu as $menuItem) : ?>
+            <?php $imgMenu = get_field('loai_menu',$menuItem) ?>
+            <li class="dropdown <?= $menuItem->children ? 'menu-pc' : '' ?>">
+                <a href="<?= $menuItem->url ?>" class="<?= $menuItem->children ? 'dropdown-toggle' : '' ?>"><?= $menuItem->title ?></a>
+                <?php if ($menuItem->children) : ?>
+                    <ul class="dropdown-menu pcats" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                        <?php foreach ($menuItem->children as $menuItem2) : ?>
+                            <li>
+                                <a itemprop="url" href="<?= $menuItem2->url ?>" title="<?= $menuItem2->title ?>">
+                                <?php $image = get_field('menu_icon',$menuItem2) ?>
+                                <?= wp_get_attachment_image($image,'small-thumbnail',true,array('class'=> 'width:30px')) ?>
+                                    <span class="tt"><?= $menuItem2->title ?></span>
+                                    <span class="stt" itemprop="name"><?= $menuItem2->title ?></span>
+                                </a>
+                            </li>
+                        <?php endforeach ?>
+                    </ul>
+                <?php endif ?>
+            </li>
+        <?php endforeach ?>
 
-            <?php if($menuItem->children): ?>
-                <ul class="dropdown-menu pcats">
-                    <?php foreach($menuItem->children as $menuItem2): ?>
-                        <li>
-                            <a href="<?= $menuItem2->url ?>" title="<?= $menuItem2->title ?>">
-                                <span class="tt"><?= $menuItem2->title ?></span>
-                                <span class="stt" itemprop="name"><?= $menuItem2->title ?></span>
-                            </a>
-                        </li>
-                    <?php endforeach ?>
-                </ul>
-            <?php endif ?>
-        </li>
-    <?php endforeach ?>
-
-    <!-- <li class="dropdown menu-pc ">
+        <!-- <li class="dropdown menu-pc ">
         <a href="https://ngocanh.com/san-pham" class="dropdown-toggle">Sản phẩm <span class="caret"></span></a>
         <ul class="dropdown-menu pcats" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
             <li>
@@ -103,7 +105,7 @@ if($menu):
         <a href="https://ngocanh.com/san-pham">Sản phẩm</a>
     </li>
 
-    <li class="dropdown menu-news menu-pc ">
+     <li class="dropdown menu-news menu-pc ">
         <a href="https://ngocanh.com/tai-lieu-vong-bi" class="dropdown-toggle">Tài liệu <span class="caret"></span></a>
         <ul class="dropdown-menu pcats" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
             <li>
@@ -126,7 +128,7 @@ if($menu):
                     <span class="tt">Video sản phẩm</span>
                     <span class="stt" itemprop="name">Video sản phẩm SKF chính hãng</span>
                 </a>
-            </li>
+            </li> 
         </ul>
     </li>
     <li class="menu-mobile ">
@@ -149,7 +151,7 @@ if($menu):
     <li class="menu-mobile ">
         <a href="/gio-hang">Giỏ hàng</a>
     </li> -->
-</ul>
+    </ul>
 <?php endif ?>
 
 <ul class="nav navbar-nav navbar-right hidden-xs">
@@ -169,6 +171,7 @@ if($menu):
         </div>
     </li>
     <li class="cart">
-        <a href="https://ngocanh.com/gio-hang" rel="nofollow"><img class="lazyload" src="https://ngocanh.com/public/assets/imgs/icons/cart.svg" style="height:24px;width:24px" alt="Giỏ hàng"><span id="cart-count">0</span></a>
+        <?php $string = wc_get_cart_url (); ?>
+        <a href="<?= $string ?>" rel="nofollow"><img class="lazyload" src="https://ngocanh.com/public/assets/imgs/icons/cart.svg" style="height:24px;width:24px" alt="Giỏ hàng"><span id="cart-count">0</span></a>
     </li>
 </ul>

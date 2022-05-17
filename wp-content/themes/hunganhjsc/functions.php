@@ -52,6 +52,7 @@ function hunganhjsc_setup() {
     );
 
     add_theme_support('customize-selective-refresh-widgets');
+    add_image_size( 'small-thumbnail', 50, 50 ); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
     add_theme_support(
         'custom-logo',
         array(
@@ -103,14 +104,14 @@ add_action( 'widgets_init', 'hunganhjsc_widgets_init' );
  */
 function hunganhjsc_scripts() {
 	wp_enqueue_style( 'hunganhjsc-style', get_stylesheet_uri(), array(), _S_VERSION );
-    wp_enqueue_style('bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css',array());
-    wp_enqueue_style('carosel', _S_THEME_URL_URI.'/assets/OwlCarousel2/dist/assets/owl.carousel.min.css');
-    wp_enqueue_style('owl-carosel', _S_THEME_URL_URI.'/assets/OwlCarousel2/dist/assets/owl.theme.default.min.css');
-    wp_enqueue_style('custom', _S_THEME_URL_URI.'/assets/css/custom.css',array());
-    wp_enqueue_style('inner', _S_THEME_URL_URI.'/assets/css/inner.css',array());
-    wp_enqueue_style('style', _S_THEME_URL_URI.'/assets/css/style.css',array());
-    wp_enqueue_style('cat-view', _S_THEME_URL_URI.'/assets/css/cat-view.css',array());
-    wp_enqueue_style('product-view', _S_THEME_URL_URI.'/assets/css/product-view.css',array());
+    wp_enqueue_style('bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css',array(), _S_VERSION);
+    wp_enqueue_style('carosel', _S_THEME_URL_URI.'/assets/OwlCarousel2/dist/assets/owl.carousel.min.css',array(), _S_VERSION);
+    wp_enqueue_style('owl-carosel', _S_THEME_URL_URI.'/assets/OwlCarousel2/dist/assets/owl.theme.default.min.css',array(), _S_VERSION);
+    wp_enqueue_style('custom', _S_THEME_URL_URI.'/assets/css/custom.css',array(), _S_VERSION);
+    wp_enqueue_style('inner', _S_THEME_URL_URI.'/assets/css/inner.css',array(), _S_VERSION);
+    wp_enqueue_style('style', _S_THEME_URL_URI.'/assets/css/style.css',array(), _S_VERSION);
+    wp_enqueue_style('cat-view', _S_THEME_URL_URI.'/assets/css/cat-view.css',array(), _S_VERSION);
+    wp_enqueue_style('product-view', _S_THEME_URL_URI.'/assets/css/product-view.css',array(), _S_VERSION);
 	wp_style_add_data( 'hunganhjsc-style', 'rtl', 'replace' );
 
 
