@@ -1,3 +1,4 @@
+
  <footer>
     <div class="foot-top">
 
@@ -67,8 +68,8 @@
                     <strong class="name" style="color: #0059a5"><?php echo get_field("site_title",'option') ?></strong>
                     <div style="padding-bottom: 5px; padding-top: 3px;">
 
-                        <a href="dai-ly-uy-quyen-vong-bi-skf.html">
-                            <img class="lazyload" src="<?php echo wp_get_attachment_image($idItem,'full') ?>
+                        <a>
+                              <?php  echo wp_get_attachment_image($idItem,'full', false ,array('class' => 'width-311px')); ?>
                         </a>
                     </div>
 
@@ -96,6 +97,7 @@
                                 rel="nofollow"><?php echo $phoneItem[1] ?></a> - <a
                                 href="tel:<?php echo $phoneItem[2] ?>" title="báo giá vòng bi SKF chính hãng"
                                 rel="nofollow"><?php echo $phoneItem[2] ?></a>
+<<<<<<< Updated upstream
                             <span style="font-size: 12px; font-weight: 400; color: #000;">
                                 <br>
                                     LK 01.10, Liền kề Tổ 9 Mỗ Lao,
@@ -108,7 +110,23 @@
                             <span style="font-size: 12px; font-weight: 400; color: #000;">D908 - Khu đô thị MonBay,
                                 Phường Hồng Hải, Hạ Long, Quảng Ninh</span>
                             Tel: <a href="tel:02036559395" rel="nofollow">(0203) 6 559 395</a><br>
+=======
+                                <br>
+                            <?php 
+                                $chiNhanh =  get_field('chi_nhanh','option') ;
+                                foreach ($chiNhanh as $chiNhanhItem){?>
+                                  <strong><?php echo $chiNhanhItem['ten'] ?></strong>
+                                            <br>
+                                            <span style="font-size: 12px; font-weight: 400; color: #000;">
+                                                <?php echo $chiNhanhItem['dia_chi'] ?>
+                                            </span>
+                                            <br>
+                                            Tel: <a href="tel:<?php echo $chiNhanhItem['sdt'] ?>" rel="nofollow"><?php echo $chiNhanhItem['sdt'] ?></a><br>
+                               <?php }?>
+>>>>>>> Stashed changes
                     </div>
+
+                  
 
                     <span style="font-size: 11px; color: #000; font-weight: 300;">Kết nối với chúng
                         tôi</span>
@@ -148,50 +166,16 @@
         <div class="container">
             <div class="adwords-content" style="line-height: 20px; font-size: 11px;">
                 <i class="glyphicon glyphicon-bookmark"></i> Hot keys:
+                <?php $terms = get_terms( array(
+                'taxonomy' => 'product_tag',
+                'hide_empty' => false,
+                ) );
 
-                <a href="san-pham/vong-bi-cau.html" title="Vòng bi cầu">Vòng bi cầu</a>
-                [14/05/2022 08:20:33] Phạm Tiến Doanh: <a href="san-pham/vong-bi-con.html" title="Vòng bi côn">Vòng bi
-                    côn</a>
-                <a href="san-pham/vong-bi-tang-trong.html" title="Vòng bi tang trống">Vòng bi tang trống</a>
-                <a href="san-pham/vong-bi-tu-lua.html" title="Vòng bi đỡ tự lựa">Vòng bi đỡ tự lựa</a>
-                <a href="san-pham/vong-bi-dua-do.html" title="Vòng bi đũa đỡ">Vòng bi đũa đỡ</a>
+                foreach( $terms as $termItem ){?>
+                <?php  $linkTag = get_term_link( $termItem ); ?>
+                     <a href="<?php echo $linkTag ?> " title="<?php echo $termItem->name ?>"><?php echo $termItem->name ?></a>
+               <?php } ?> 
 
-                <a href="san-pham/vong-bi-chan.html" title="Vòng bi chặn">Vòng bi chặn</a>
-                <a href="san-pham/vong-bi-do-chan.html" title="Vòng bi đỡ chặn">Vòng bi đỡ chặn</a>
-                <a href="san-pham/vong-bi-tiep-xuc-bon-diem.html" title="Vòng bi tiếp xúc bốn điểm">Vòng bi tiếp xúc
-                    bốn điểm</a>
-                <a href="san-pham/vong-bi-yar.html" title="Vòng bi YAR">Vòng bi YAR</a>
-                <a href="san-pham/vong-bi-xe-may.html" title="Vòng bi xe máy">Vòng bi xe máy</a>
-                <a href="san-pham/vong-bi-xe-tai.html" title="Vòng bi xe tải">Vòng bi xe tải</a>
-                <a href="san-pham/goi-do-skf.html" title="Gối đỡ SKF">Gối đỡ SKF</a>
-
-                <a href="san-pham/ong-lot-vong-bi.html" title="Măng xông - Ống lót">Măng xông - Ống lót</a>
-                <a href="san-pham/mo-boi-tron-SKF.html" title="Mỡ chịu nhiệt SKF">Mỡ chịu nhiệt SKF</a>
-                <a href="san-pham/dung-cu-skf.html" title="Dụng cụ bảo trì SKF">Dụng cụ bảo trì SKF</a>
-                <a href="san-pham/phot-chan-skf.html" title="Phớt chặn dầu SKF">Phớt chặn dầu SKF</a>
-                <a href="day-dai-SKF-chinh-hang.html" title="Dây đai SKF">Dây đai SKF</a>
-                <a href="xich-tai-skf.html" title="Xích tải SKF">Xích tải SKF</a>
-                <a href="san-pham/dung-cu-skf/May-gia-nhiet-vong-bi-SKF.html" title="Máy gia nhiệt vòng bi">Máy gia
-                    nhiệt vòng bi</a>
-                <a href="san-pham/dung-cu-skf/Bo-Cao-Vau-thao-lap-vong-bi.html" title="Vam cảo SKF">Vam cảo SKF</a>
-                <a href="san-pham/dung-cu-skf/Dung-cu-thao-lap-vong-bi-TMFT-36.html" title="Bộ đóng vòng bi">Bộ đóng
-                    vòng bi</a>
-
-                <a href="tai-lieu-vong-bi/xuat-xu-vong-bi-skf.html" title="Xuất xứ vòng bi SKF">Xuất xứ vòng bi
-                    SKF</a>
-
-                <a href="kiem-tra-vong-bi-gia-skf.html" title="Phân biệt vòng bi SKF giả">Phân biệt vòng bi SKF
-                    giả</a>
-                <a href="catalogue.html" title="Catalogue SKF">Catalogue SKF</a>
-                <a href="http://timvongbi.com/" title="Tra cứu vòng bi" target="_blank">Tra cứu vòng bi</a>
-                <a href="dai-ly-uy-quyen-vong-bi-skf.html" title="Đại lý ủy quyền SKF">Đại lý ủy quyền SKF</a>
-                <a href="san-pham/vong-bi-skf.html" title="Vòng bi SKF">Vòng bi SKF</a>
-                [14/05/2022 08:20:34] Phạm Tiến Doanh: <a href="tai-lieu-vong-bi/SKF-Authenticate.html"
-                    title="SKF Authenticate App">SKF Authenticate
-                    App</a>
-                <a href="top-skf-ngocanh.html" title="Top vòng bi SKF bán chạy">Top vòng bi SKF bán chạy</a>
-                <a href="bao-chi-noi-ve-chung-toi/index.html" title="Báo chí nói về SKF Ngọc Anh">Báo chí nói về SKF
-                    Ngọc Anh</a>
             </div>
         </div>
     </div>
@@ -222,6 +206,8 @@
 <!--go to top-->
 <img alt="go to top" src="./assets/imgs/icon_gototop.png" width="36" height="36" id="scroll_top_icon"
     style="cursor:pointer; display:none; position:fixed; bottom:265px; right:15px" />
+
+   
 
 <?php wp_footer() ?>
 </body>
