@@ -97,7 +97,6 @@
                                 rel="nofollow"><?php echo $phoneItem[1] ?></a> - <a
                                 href="tel:<?php echo $phoneItem[2] ?>" title="báo giá vòng bi SKF chính hãng"
                                 rel="nofollow"><?php echo $phoneItem[2] ?></a>
-<<<<<<< Updated upstream
                             <span style="font-size: 12px; font-weight: 400; color: #000;">
                                 <br>
                                     LK 01.10, Liền kề Tổ 9 Mỗ Lao,
@@ -110,7 +109,6 @@
                             <span style="font-size: 12px; font-weight: 400; color: #000;">D908 - Khu đô thị MonBay,
                                 Phường Hồng Hải, Hạ Long, Quảng Ninh</span>
                             Tel: <a href="tel:02036559395" rel="nofollow">(0203) 6 559 395</a><br>
-=======
                                 <br>
                             <?php 
                                 $chiNhanh =  get_field('chi_nhanh','option') ;
@@ -123,7 +121,7 @@
                                             <br>
                                             Tel: <a href="tel:<?php echo $chiNhanhItem['sdt'] ?>" rel="nofollow"><?php echo $chiNhanhItem['sdt'] ?></a><br>
                                <?php }?>
->>>>>>> Stashed changes
+
                     </div>
 
                   
