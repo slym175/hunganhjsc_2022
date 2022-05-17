@@ -42,3 +42,31 @@ Stack trace:
 
 2022-05-17T03:15:41+00:00 CRITICAL syntax error, unexpected '}' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\slide.php on line 11
 
+2022-05-17T03:38:18+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php:54
+Stack trace:
+#0 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(307): WP_NanoBakeryBuilder->{closure}('')
+#1 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\plugins\js_composer\include\classes\core\class-vc-manager.php(219): do_action('vc_before_init')
+#4 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(307): Vc_Manager->init('')
+#5 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#7 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-settings.php(587): do_action( in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 54
+
+2022-05-17T03:43:21+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php:54
+Stack trace:
+#0 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(307): WP_NanoBakeryBuilder->{closure}('')
+#1 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\plugins\js_composer\include\classes\core\class-vc-manager.php(219): do_action('vc_before_init')
+#4 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(307): Vc_Manager->init('')
+#5 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#7 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-settings.php(587): do_action( in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 54
+
+2022-05-17T04:28:54+00:00 CRITICAL syntax error, unexpected end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\search.php on line 67
+
+2022-05-17T04:29:16+00:00 CRITICAL syntax error, unexpected '}' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\search.php on line 7
+
+2022-05-17T04:29:18+00:00 CRITICAL syntax error, unexpected '}' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\search.php on line 7
+

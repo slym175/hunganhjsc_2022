@@ -60,6 +60,23 @@
             });
         }
 
+        private function get_list_tax_selector($tax, $args = array())
+        {
+            $args = array_merge(
+                array(
+                    'taxonomy' => $tax,
+                    'hide_empty' => false,
+                ),
+                $args
+            );
+            $taxonomies = get_terms($args);
+            if (!$taxonomies) return [];
+            foreach ($taxonomies as $item) {
+                $result[$item->name] = $item->term_id;
+            }
+            return $result;
+        }
+
         private function get_list_post_selector($posttype = 'post')
         {
             if ($posttype === 'wpforms') {
@@ -89,6 +106,39 @@
                     ),
                     'view' => 'template-parts/content/vc_map_templates/home/slide'
                 ),
+                'st_category' => array(
+                    'name' => 'Danh mục sản phẩm',
+                    'attr' => array(
+                        'category_products' => array(
+                            'type' => 'attach_images',
+                            'heading' => __('Category', _S_TEXTDOMAIN)
+                        ),
+                    ),
+                    'view' => 'template-parts/content/vc_map_templates/home/category-products'
+                ),
+                'st_search_product' => array(
+                    'name' => 'Tìm kiếm sản phẩm',
+                    'attr' => array(
+                        'title' => array(
+                            'type' => 'textfield',
+                            'heading' => __('Title', _S_TEXTDOMAIN)
+                        ),
+                        'images_logo' => array(
+                            'type' => 'attach_images',
+                            'heading' => __('Ảnh thương hiệu', _S_TEXTDOMAIN)
+                        ),
+                        'subtitle' => array(
+                            'type' => 'textfield',
+                            'heading' => __('Mô tả', _S_TEXTDOMAIN)
+                        ),
+                        'product_cat' => array(
+                            'type' => 'dropdown_select2',
+                            'value' => $this->get_list_tax_selector('product_cat',array('parent'=> 0)),
+                            'heading' =>  __('Danh mục sản phẩm', _S_TEXTDOMAIN)
+                        ),
+                    ),
+                    'view' => 'template-parts/content/vc_map_templates/home/search'
+                )
             );
         }
 
