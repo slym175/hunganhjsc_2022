@@ -75,14 +75,14 @@ get_header();
                                             name="Vòng bi SKF chính hãng" title="Vòng bi SKF chính hãng"><span
                                                 style="color:#000000"><?php echo $categoryParent->name ?></span></a><span
                                             style="color:#000000">&nbsp;
-                                            - Đại lý uỷ quyền SKF - SKF Ngọc Anh</span></strong></span></h1>
+                                            - Đại lý uỷ quyền SKF - SKF Hung Anh</span></strong></span></h1>
                             <p><span style="font-size:14px"><span style="color:#000000">SKF là thương hiệu vòng bi bạc
                                         đạn số 1 thế giới đến từ Thuỵ Điển (Sweden).&nbsp;
                                     </span></span><span style="font-size:14px"><span style="color:rgb(0, 0, 0)">Sản phẩm
                                         SKF chính hãng được phân phối bởi SKF Ngọc Anh - Đại lý ủy quyền SKF tại Việt
                                         Nam</span></span></p>
                             <p style="text-align:center"><img
-                                    alt="Vòng bi skf chính hãng được phân phối bởi SKF Ngọc Anh"
+                                alt="Vòng bi skf chính hãng được phân phối bởi SKF Ngọc Anh"
                                     src="../public/cuploads/images/baiviet/vong-bi-skf-ngocanh.jpg"
                                     style="height:238px; width:1000px" /></p>
                             <p style="text-align:center"><em><span style="font-size:12px"><span
