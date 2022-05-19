@@ -1,7 +1,7 @@
 <?php
 $title = $args['title'];
 $feedbacks = vc_param_group_parse_atts($args['whybox_list']); ?>
-<div class="whyBox" style="padding: 30px 0; background-color: #f5f5f5;">
+<div class="whyBox" style="padding: 30px 0;">
     <div class="container">
         <div class="text-center">
             <h2 class="box-heading" style="font-weight:700; color:#000"><?php print_r($title) ?></h2><br>
