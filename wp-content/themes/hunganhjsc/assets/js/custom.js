@@ -1,4 +1,4 @@
-$(function () {
+jQuery(function () {
     jQuery.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')
@@ -66,7 +66,7 @@ $(function () {
     ;
 
     jQuery('.carousel.lazy-load').bind('slide.bs.carousel', function (e) {
-        var image = $(e.relatedTarget).find('img[data-src]');
+        var image =jQuery(e.relatedTarget).find('img[data-src]');
         image.attr('src', image.data('src'));
         image.removeAttr('data-src');
     });

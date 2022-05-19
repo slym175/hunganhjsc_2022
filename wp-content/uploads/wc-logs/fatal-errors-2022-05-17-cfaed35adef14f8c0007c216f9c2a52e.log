@@ -114,3 +114,21 @@ Stack trace:
 
 2022-05-17T04:29:18+00:00 CRITICAL syntax error, unexpected '}' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\search.php on line 7
 
+2022-05-17T06:50:32+00:00 CRITICAL syntax error, unexpected ',' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 147
+
+2022-05-17T07:03:10+00:00 CRITICAL syntax error, unexpected ']', expecting ')' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 200
+
+2022-05-17T07:05:11+00:00 CRITICAL syntax error, unexpected ']', expecting ')' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 200
+
+2022-05-17T07:39:48+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\whybox.php on line 4
+
+2022-05-17T07:41:44+00:00 CRITICAL syntax error, unexpected '$item' (T_VARIABLE) in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\whybox.php on line 11
+
+2022-05-17T07:48:12+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\whybox.php on line 4
+
+2022-05-17T07:48:49+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\whybox.php on line 5
+
+2022-05-17T09:26:03+00:00 CRITICAL syntax error, unexpected '$item' (T_VARIABLE), expecting '(' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\whybox.php on line 14
+
+2022-05-17T09:29:36+00:00 CRITICAL syntax error, unexpected '$item' (T_VARIABLE), expecting '(' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\whybox.php on line 14
+

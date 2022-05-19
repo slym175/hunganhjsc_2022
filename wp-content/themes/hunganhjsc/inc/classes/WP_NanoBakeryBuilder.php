@@ -133,11 +133,113 @@
                         ),
                         'product_cat' => array(
                             'type' => 'dropdown_select2',
-                            'value' => $this->get_list_tax_selector('product_cat',array('parent'=> 0)),
+                            'value' => $this->get_list_tax_selector('product_cat', array('parent' => 0)),
                             'heading' =>  __('Danh mục sản phẩm', _S_TEXTDOMAIN)
-                        ),
+                        )
                     ),
                     'view' => 'template-parts/content/vc_map_templates/home/search'
+                ),
+                'st_whybox' => array(
+                    'name' => 'Đại lý ủy quyền',
+                    'attr' => array(
+                        'title' => array(
+                            'type' => 'textfield',
+                            'heading' => __('Tiêu đề', _S_TEXTDOMAIN)
+                        ),
+                        'whybox_list' => array(
+                            'type' => 'param_group',
+                            'heading' => __('Danh sách', _S_TEXTDOMAIN),
+                            'params' => [
+                                [
+                                    'type' => 'attach_image',
+                                    'heading' => __('Ảnh đại diện', _S_TEXTDOMAIN),
+                                    'param_name' => 'avatar'
+                                ],
+                                [
+                                    "type" => "textfield",
+                                    "heading" => __("Tiêu đề", _S_TEXTDOMAIN),
+                                    "param_name" => "title",
+                                ],
+                                [
+                                    "type" => "textarea",
+                                    "heading" => __("Mô tả", _S_TEXTDOMAIN),
+                                    "param_name" => "description",
+                                ],
+                                [
+                                    "type" => "vc_link",
+                                    "heading" => __("Liên kết", _S_TEXTDOMAIN),
+                                    "param_name" => "link",
+                                ]
+                            ],
+                        ),
+                    ),
+                    'view' => 'template-parts/content/vc_map_templates/home/whybox'
+                ),
+                'st_baochi_box' => array(
+                    'name' => 'Báo chí',
+                    'attr' => array(
+                        'newspapers' => array(
+                            'type' => 'textfield',
+                            'heading' => __('Báo chí', _S_TEXTDOMAIN)
+                        ),
+                        'newspapers_list' => array(
+                            'type' => 'param_group',
+                            'heading' => __('Danh sách', _S_TEXTDOMAIN),
+                            'params' => [
+                                [
+                                    'type' => 'attach_images',
+                                    'heading' => __('Ảnh đại diện', _S_TEXTDOMAIN),
+                                    'param_name' => 'avatar'
+                                ],
+                                [
+                                    "type" => "vc_link",
+                                    "heading" => __("Liên kết", _S_TEXTDOMAIN),
+                                    "param_name" => "link",
+                                ]
+                            ],
+                        ),
+                    ),
+                    'view' => 'template-parts/content/vc_map_templates/home/newspapers'
+                ),
+                'st_content_mid' => array(
+                    'name' => 'Bài viết - Tin tức',
+                    'attr' => array(
+                        'title' => array(
+                            'type' => 'textfield',
+                            'heading' => __('Bài viết- Tin tức', _S_TEXTDOMAIN)
+                        ),
+                        'link' => array(
+                            'type' => 'vc_link',
+                            'heading' => __('Liên kết', _S_TEXTDOMAIN)
+                        ),
+                        'news_section' => array(
+                            'type' => 'param_group',
+                            'heading' => __('Danh sách', _S_TEXTDOMAIN),
+                            'params' => [
+                                [
+                                    'type' => 'attach_images',
+                                    'heading' => __('Ảnh', _S_TEXTDOMAIN),
+                                    'param_name' => 'avatar'
+                                ],
+                                [
+                                    'type' => 'textfield',
+                                    'heading' => __('Tiêu đề', _S_TEXTDOMAIN),
+                                    'param_name' => 'title-news'
+                                ],
+                                [
+                                    "type" => "textarea",
+                                    "heading" => __("Mô tả", _S_TEXTDOMAIN),
+                                    "param_name" => "description",
+                                ],
+                                [
+                                    "type" => "vc_link",
+                                    "heading" => __("Liên kết", _S_TEXTDOMAIN),
+                                    "param_name" => "link",
+                                ]
+                            ],
+                        ),
+                    ),
+                    'view' => 'template-parts/content/vc_map_templates/home/news-section'
                 )
             );
         }

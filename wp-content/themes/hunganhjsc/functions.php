@@ -121,9 +121,11 @@ function hunganhjsc_scripts() {
 	}
 
     wp_enqueue_script('jquery');
-    wp_enqueue_script('custom',_S_THEME_URL_URI.'/assets/js/custom.js',array(), null, true);
+    // thêm js owl carousel vào đây
+    wp_enqueue_script('carosel',_S_THEME_URL_URI.'/assets/OwlCarousel2/dist/owl.carousel.js');
     wp_enqueue_script('twitter-bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js',array(), null, true);
     wp_enqueue_script('block-ui',_S_THEME_URL_URI.'/assets/js/jquery.blockUI.min.js', array(), null, true);
+    wp_enqueue_script('custom',_S_THEME_URL_URI.'/assets/js/custom.js',array(), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'hunganhjsc_scripts' );
 

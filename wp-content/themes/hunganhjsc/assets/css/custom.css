@@ -174,8 +174,6 @@ span.stButton:first-child {
     margin: 5px 5px;
     object-fit: cover;
 }
-<<<<<<< Updated upstream
-=======
 .width-168px{
     width: 168px !important;
     object-fit: cover;
@@ -234,6 +232,33 @@ main .list-category .clearfix3 {
         font-size: 13px;
     }
 }
+.owl-nav {
+    display: none !important;
+}
 
+.mainCats .lists .item {
+    /*float: left;*/
+    /*text-align: center;*/
+    padding: 0 15px;
+    filter: grayscale(100%) opacity(65%);
+
+}
+
+.mainCats .lists .item:hover {
+    filter: grayscale(0) opacity(1);
+}
+
+
+.mainCats .lists .item img {
+    width: 202px !important;
+    height: 83px !important;
+    border: 1px solid #E1E1E1;
+    border-radius: 8px;
+    width: 100%;
+    height: auto !important;
+}
+.img{
+
+}
 /* end css archive */
->>>>>>> Stashed changes
+
