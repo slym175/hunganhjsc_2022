@@ -1,0 +1,121 @@
+
+2022-05-19T01:28:12+00:00 CRITICAL syntax error, unexpected '<' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\news-section.php on line 15
+
+2022-05-19T03:21:07+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\news-section.php:43
+Stack trace:
+#0 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template.php(772): require()
+#1 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template.php(716): load_template('D:\\thaihongpham...', false, Array)
+#2 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php(39): get_template_part('template-parts/...', '', Array)
+#4 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\shortcodes.php(356): WP_NanoBakeryBuilder->{closure}(Array, '', 'st_content_mid')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(st_sli...', 'do_shortcode_ta in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\news-section.php on line 43
+
+2022-05-19T03:21:36+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\news-section.php:43
+Stack trace:
+#0 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template.php(772): require()
+#1 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template.php(716): load_template('D:\\thaihongpham...', false, Array)
+#2 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php(39): get_template_part('template-parts/...', '', Array)
+#4 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\shortcodes.php(356): WP_NanoBakeryBuilder->{closure}(Array, '', 'st_content_mid')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(st_sli...', 'do_shortcode_ta in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\news-section.php on line 43
+
+2022-05-19T03:21:45+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\news-section.php:43
+Stack trace:
+#0 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template.php(772): require()
+#1 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\template.php(716): load_template('D:\\thaihongpham...', false, Array)
+#2 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php(39): get_template_part('template-parts/...', '', Array)
+#4 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\shortcodes.php(356): WP_NanoBakeryBuilder->{closure}(Array, '', 'st_content_mid')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(st_sli...', 'do_shortcode_ta in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\news-section.php on line 43
+
+2022-05-19T03:28:48+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\news-section.php on line 46
+
+2022-05-19T03:44:42+00:00 CRITICAL syntax error, unexpected end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\news-section.php on line 67
+
+2022-05-19T03:46:28+00:00 CRITICAL syntax error, unexpected end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\home\news-section.php on line 66
+
+2022-05-19T08:21:43+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php:54
+Stack trace:
+#0 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(307): WP_NanoBakeryBuilder->{closure}('')
+#1 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\plugins\js_composer\include\classes\core\class-vc-manager.php(219): do_action('vc_before_init')
+#4 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(307): Vc_Manager->init('')
+#5 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#7 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-settings.php(587): do_action( in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 54
+
+2022-05-19T08:21:46+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php:54
+Stack trace:
+#0 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(307): WP_NanoBakeryBuilder->{closure}('')
+#1 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\plugins\js_composer\include\classes\core\class-vc-manager.php(219): do_action('vc_before_init')
+#4 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(307): Vc_Manager->init('')
+#5 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#7 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-settings.php(587): do_action( in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 54
+
+2022-05-19T08:21:47+00:00 CRITICAL Uncaught Error: Unsupported operand types in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php:54
+Stack trace:
+#0 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(307): WP_NanoBakeryBuilder->{closure}('')
+#1 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\plugins\js_composer\include\classes\core\class-vc-manager.php(219): do_action('vc_before_init')
+#4 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(307): Vc_Manager->init('')
+#5 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#7 D:\thaihongpham\htdocs\hunganhjsc_2022\wp-settings.php(587): do_action( in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 54
+
+2022-05-19T08:26:22+00:00 CRITICAL syntax error, unexpected ')', expecting ';' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 277
+
+2022-05-19T08:26:47+00:00 CRITICAL syntax error, unexpected ')', expecting ';' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 277
+
+2022-05-19T08:26:47+00:00 CRITICAL syntax error, unexpected ')', expecting ';' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 277
+
+2022-05-19T08:26:47+00:00 CRITICAL syntax error, unexpected ')', expecting ';' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 277
+
+2022-05-19T08:30:51+00:00 CRITICAL syntax error, unexpected '}', expecting ';' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 276
+
+2022-05-19T08:30:51+00:00 CRITICAL syntax error, unexpected '}', expecting ';' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 276
+
+2022-05-19T08:33:25+00:00 CRITICAL syntax error, unexpected '}', expecting ';' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 276
+
+2022-05-19T08:33:26+00:00 CRITICAL syntax error, unexpected '}', expecting ';' in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\inc\classes\WP_NanoBakeryBuilder.php on line 276
+
+2022-05-19T09:04:35+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\introduce\section1.php on line 49
+
+2022-05-19T09:35:22+00:00 CRITICAL syntax error, unexpected end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\introduce\section1.php on line 327
+
+2022-05-19T09:35:30+00:00 CRITICAL syntax error, unexpected end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\introduce\section1.php on line 327
+
+2022-05-19T09:35:34+00:00 CRITICAL syntax error, unexpected end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\introduce\section1.php on line 327
+
+2022-05-19T09:35:41+00:00 CRITICAL syntax error, unexpected end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\introduce\section1.php on line 327
+
+2022-05-19T09:35:44+00:00 CRITICAL syntax error, unexpected end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\introduce\section1.php on line 327
+
+2022-05-19T09:37:11+00:00 CRITICAL syntax error, unexpected end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\introduce\section1.php on line 327
+
+2022-05-19T12:57:37+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:38+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:38+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:43+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:44+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:44+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:54+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:55+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:55+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+
