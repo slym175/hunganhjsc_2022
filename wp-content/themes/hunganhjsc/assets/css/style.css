@@ -57,8 +57,8 @@ b, strong {
 @media (max-width: 767px) {
     .navbar-default .navbar-brand {
         position: absolute;
-        left: 45%;
-        margin-left: -68px
+        left: 50%;
+        transform: translate(-50%);
     }
 
     .navbar-default .navbar-toggle {
@@ -718,7 +718,6 @@ header .hdr-top .navbar-default.navbar-pc.affix {
 header .hdr-top .navbar-default.navbar-pc:before {
     content: "";
     display: block;
-    width: 21%;
     height: 100%;
     position: absolute;
     background: #00599a;
@@ -734,85 +733,37 @@ header .hdr-top .navbar-default.navbar-pc:after {
     width: 55px;
     height: 55px;
     position: absolute;
-    left: 21%;
+    left: 0;
     top: 10px
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 768px) {
     header .hdr-top .navbar-default.navbar-pc:before {
-        width: 23%
+        width: calc((100% - 750px) / 2 + 70px);
     }
 
     header .hdr-top .navbar-default.navbar-pc:after {
-        left: 23%
-    }
-
-    header .hdr-top .navbar-default.navbar-pc:before {
-        width: 25%
-    }
-
-    header .hdr-top .navbar-default.navbar-pc:after {
-        left: 25%
+        left: calc((100% - 750px) / 2 + 70px);
     }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 992px) {
     header .hdr-top .navbar-default.navbar-pc:before {
-        width: 27%
+        width: calc((100% - 970px) / 2 + 70px);
     }
 
     header .hdr-top .navbar-default.navbar-pc:after {
-        left: 27%
+        left: calc((100% - 970px) / 2 + 70px);
     }
 }
 
-@media (min-width: 1840px) {
+@media (min-width: 1200px) {
     header .hdr-top .navbar-default.navbar-pc:before {
-        width: 29%
+        width: calc((100% - 1170px) / 2 + 70px);
     }
 
     header .hdr-top .navbar-default.navbar-pc:after {
-        left: 29%
-    }
-}
-
-@media (min-width: 2030px) {
-    header .hdr-top .navbar-default.navbar-pc:before {
-        width: 31%
-    }
-
-    header .hdr-top .navbar-default.navbar-pc:after {
-        left: 31%
-    }
-}
-
-@media (min-width: 2210px) {
-    header .hdr-top .navbar-default.navbar-pc:before {
-        width: 33%
-    }
-
-    header .hdr-top .navbar-default.navbar-pc:after {
-        left: 33%
-    }
-}
-
-@media (min-width: 2510px) {
-    header .hdr-top .navbar-default.navbar-pc:before {
-        width: 33%
-    }
-
-    header .hdr-top .navbar-default.navbar-pc:after {
-        left: 33%
-    }
-}
-
-@media (min-width: 2770px) {
-    header .hdr-top .navbar-default.navbar-pc:before {
-        width: 36%
-    }
-
-    header .hdr-top .navbar-default.navbar-pc:after {
-        left: 36%
+        left: calc((100% - 1170px) / 2 + 70px);
     }
 }
 
@@ -1033,14 +984,6 @@ header .hdr-top .navbar-default.navbar-pc ul.nav > li:hover > a:after {
 }
 
 @media (max-width: 1199px) {
-    header .hdr-top .navbar-default.navbar-pc:before {
-        width: 24%
-    }
-
-    header .hdr-top .navbar-default.navbar-pc:after {
-        left: 24%
-    }
-
     header .hdr-top .navbar-default.navbar-pc ul.nav > li > a {
         padding-left: 15px;
         padding-right: 15px

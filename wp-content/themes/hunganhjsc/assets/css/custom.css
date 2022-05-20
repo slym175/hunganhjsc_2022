@@ -163,22 +163,25 @@ span.stButton:first-child {
     height: auto !important;
 }
 
-.width-125px{
+.width-125px {
     width: 125px !important;
-    height:47px;
+    height: 47px;
     object-fit: cover;
 }
-.width-15px{
+
+.width-15px {
     width: 25px !important;
-    height:25px !important;
+    height: 25px !important;
     margin: 5px 5px;
     object-fit: cover;
 }
-.width-168px{
+
+.width-168px {
     width: 168px !important;
     object-fit: cover;
 }
-.width-311px{
+
+.width-311px {
     width: 311px !important;
     object-fit: cover;
 }
@@ -232,6 +235,7 @@ main .list-category .clearfix3 {
         font-size: 13px;
     }
 }
+
 .owl-nav {
     display: none !important;
 }
@@ -257,8 +261,309 @@ main .list-category .clearfix3 {
     width: 100%;
     height: auto !important;
 }
-.img{
 
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvffS2-vw.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: 100%
 }
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvefS2-vw.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvQfS0.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvffS2-vw.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvefS2-vw.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvQfS0.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLh4vSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLhovSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLiIvS.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLh4vSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLhovSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLiIvS.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA72jCksAxljYm.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA72jCksExljYm.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA72jCks8xlg.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLh4vSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLhovSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLiIvS.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+span.stButton * {
+    box-sizing: content-box;
+}
+
+span.stButton:first-child {
+    margin-left: 0;
+}
+
+.youtube {
+    background-color: #000;
+    margin-bottom: 0px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.youtube .play-button:hover {
+    background-color: #c00
+}
+
+.youtube img {
+    width: 100%;
+    top: -16.82%;
+    left: 0;
+    opacity: .7
+}
+
+.youtube .play-button {
+    width: 60px;
+    height: 40px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: .8;
+    border-radius: 6px
+}
+
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #fff
+}
+
+.youtube:hover {
+    background-color: #ccc
+}
+
+.youtube img, .youtube .play-button {
+    cursor: pointer
+}
+
+.youtube img, .youtube iframe, .youtube .play-button, .youtube .play-button:before {
+    position: absolute
+}
+
+.youtube .play-button, .youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0)
+}
+
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.short-full {
+    float: right;
+    transition: .2s all ease-in-out;
+    position: absolute;
+    right: 7px;
+    top: 10px;
+    color: #999;
+}
+
+.collapsed .short-full {
+    transform: rotate(180deg);
+}
+
+.panel-default > .panel-heading {
+    position: relative;
+    background-color: #f5f9fa7a;
+}
+
+.panel-default > .panel-heading h4 {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: justify;
+}
+
+.panel-heading a {
+    display: block;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.panel-heading .star {
+    position: absolute;
+    left: 7px;
+    top: 9px;
+    font-size: 14px;
+    /*color: #0E62A0;*/
+    color: #999;
+}
+
+.accordion-list .panel {
+    margin-bottom: 5px;
+}
+
+.accordion-list .panel .panel-body {
+    font-size: 12px;
+}
+
+.mcr img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
 /* end css archive */
 
+.d-flex {
+    display: flex;
+}
+
+.d-flex.justify-content-center {
+    justify-content: center;
+}
+
+.d-flex.align-item-center {
+    align-items: center;
+}
+
+.btn,
+.btn:focus,
+.btn:active,
+.btn[type=button]:focus,
+.btn[type=submit]:focus {
+    outline: none;
+}
