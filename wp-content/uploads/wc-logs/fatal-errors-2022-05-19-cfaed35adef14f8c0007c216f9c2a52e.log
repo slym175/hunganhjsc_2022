@@ -99,3 +99,21 @@ Stack trace:
 
 2022-05-19T09:37:11+00:00 CRITICAL syntax error, unexpected end of file in D:\thaihongpham\htdocs\hunganhjsc_2022\wp-content\themes\hunganhjsc\template-parts\content\vc_map_templates\introduce\section1.php on line 327
 
+2022-05-19T12:57:37+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:38+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:38+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:43+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:44+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:44+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:54+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:55+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
+2022-05-19T12:57:55+00:00 CRITICAL syntax error, unexpected 'hàng' (T_STRING), expecting ';' or ',' in G:\phpProject\hunganhjsc\wp-content\themes\hunganhjsc\template-parts\menu\menu-primary.php on line 44
+
