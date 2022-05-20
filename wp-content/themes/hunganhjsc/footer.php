@@ -1,3 +1,4 @@
+</main>
 <footer>
     <div class="foot-top">
         <div class="hotline">
