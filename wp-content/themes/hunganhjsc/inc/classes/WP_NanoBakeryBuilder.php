@@ -110,8 +110,10 @@
                         'name' => 'Danh mục sản phẩm',
                         'attr' => array(
                             'category_products' => array(
-                                'type' => 'attach_images',
-                                'heading' => __('Category', _S_TEXTDOMAIN)
+                                'type' => 'dropdown_select2',
+                                'value' => $this->get_list_tax_selector('product_cat', array('parent' => 0)),
+                                'heading' => __('Category', _S_TEXTDOMAIN),
+                                'multiple' => true
                             ),
                         ),
                         'view' => 'template-parts/content/vc_map_templates/home/category-products'
@@ -131,10 +133,15 @@
                                 'type' => 'textfield',
                                 'heading' => __('Mô tả', _S_TEXTDOMAIN)
                             ),
+                            'note' => array(
+                                'type' => 'textfield',
+                                'heading' => __('Ghi chú', _S_TEXTDOMAIN)
+                            ),
                             'product_cat' => array(
                                 'type' => 'dropdown_select2',
                                 'value' => $this->get_list_tax_selector('product_cat', array('parent' => 0)),
-                                'heading' =>  __('Danh mục sản phẩm', _S_TEXTDOMAIN)
+                                'heading' =>  __('Danh mục sản phẩm', _S_TEXTDOMAIN),
+                                'multiple' => true
                             )
                         ),
                         'view' => 'template-parts/content/vc_map_templates/home/search'
@@ -207,38 +214,34 @@
                         'attr' => array(
                             'title' => array(
                                 'type' => 'textfield',
-                                'heading' => __('Bài viết- Tin tức', _S_TEXTDOMAIN)
+                                'heading' => __('Bài viết - Tin tức', _S_TEXTDOMAIN)
                             ),
                             'link' => array(
                                 'type' => 'vc_link',
                                 'heading' => __('Liên kết', _S_TEXTDOMAIN)
                             ),
                             'news_section' => array(
-                                'type' => 'param_group',
-                                'heading' => __('Danh sách', _S_TEXTDOMAIN),
-                                'params' => [
-                                    [
-                                        'type' => 'attach_images',
-                                        'heading' => __('Ảnh', _S_TEXTDOMAIN),
-                                        'param_name' => 'avatar'
-                                    ],
-                                    [
-                                        'type' => 'textfield',
-                                        'heading' => __('Tiêu đề', _S_TEXTDOMAIN),
-                                        'param_name' => 'title-news'
-                                    ],
-                                    [
-                                        "type" => "textarea",
-                                        "heading" => __("Mô tả", _S_TEXTDOMAIN),
-                                        "param_name" => "description",
-                                    ],
-                                    [
-                                        "type" => "vc_link",
-                                        "heading" => __("Liên kết", _S_TEXTDOMAIN),
-                                        "param_name" => "link",
-                                    ]
-                                ],
+                                'type' => 'dropdown_select2',
+                                'value' => $this->get_list_post_selector(),
+                                'heading' =>  __('Bài viết hiển thị', _S_TEXTDOMAIN),
+                                'multiple' => true
                             ),
+                            'video_heading' => array(
+                                'type' => 'textfield',
+                                'heading' => __('Video clip', _S_TEXTDOMAIN)
+                            ),
+                            'video_title' => array(
+                                'type' => 'textfield',
+                                'heading' => __('Tiêu đề video', _S_TEXTDOMAIN)
+                            ),
+                            'video_image' => array(
+                                'type' => 'attach_image',
+                                'heading' => __('Ảnh đại diện video', _S_TEXTDOMAIN)
+                            ),
+                            'video_url' => array(
+                                'type' => 'textfield',
+                                'heading' => __('Link video', _S_TEXTDOMAIN)
+                            )
                         ),
                         'view' => 'template-parts/content/vc_map_templates/home/news-section'
                     ),

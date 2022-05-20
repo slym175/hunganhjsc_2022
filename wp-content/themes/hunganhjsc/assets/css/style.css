@@ -111,7 +111,10 @@ main .list-category .cat {
 }
 
 main .list-category .cat a {
-    color: #333
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 main .list-category .cat a:hover {
@@ -145,7 +148,13 @@ main .list-category .cat .txt {
     padding: 5px 0 0;
     line-height: 24px;
     font-size: 15px;
-    font-weight: 700
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1200px) {
+    main .list-category .cat .txt {
+        max-width: 150px;
+    }
 }
 
 main ._breadcrumb {
@@ -681,6 +690,12 @@ footer .foot-midd .menus ul li a {
     font-weight: 500
 }
 
+.whyBox .list-item ._item .info .title a,
+.whyBox .list-item ._item .info .title a:hover,
+.whyBox .list-item ._item .info .title a:focus {
+    text-decoration: none;
+}
+
 header .hdr-top {
     position: relative;
     z-index: 8888;
@@ -1151,4 +1166,9 @@ header .hdr-top .navbar-default .navbar-collapse.search form img {
 
 header .hdr-btm {
     margin-bottom: 20px
+}
+
+.home-main-slider .carousel-inner > .item > a > img,
+.home-main-slider .carousel-inner > .item > img {
+    width: 100%;
 }

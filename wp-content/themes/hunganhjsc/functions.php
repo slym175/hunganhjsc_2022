@@ -127,6 +127,7 @@ function hunganhjsc_scripts()
     wp_enqueue_script('hunganhjsc-carousel', _S_THEME_URL_URI . '/assets/OwlCarousel2/dist/owl.carousel.js', array(), null, true);
     wp_enqueue_script('hunganhjsc-twitter-bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js', array(), null, true);
     wp_enqueue_script('hunganhjsc-block-ui', _S_THEME_URL_URI . '/assets/js/jquery.blockUI.js', array(), null, true);
+    wp_enqueue_script('hunganhjsc-fancybox', _S_THEME_URL_URI . '/assets/js/jquery.fancybox.js', array(), null, true);
     wp_enqueue_script('hunganhjsc-custom', _S_THEME_URL_URI . '/assets/js/custom.js', array(), null, true);
 }
 

@@ -141,6 +141,8 @@ jQuery(function () {
             this.addEventListener("touchmove", handle, {passive: !ns.includes("noPreventDefault")});
         }
     };
+
+    jQuery('[data-fancybox]').fancybox();
 });
 
 (function () {
@@ -199,3 +201,5 @@ jQuery("iframe").each(function () {
     jQuery(this).attr("data-src", jQuery(this).attr("src"));
     jQuery(this).removeAttr("src");
 });
+
+

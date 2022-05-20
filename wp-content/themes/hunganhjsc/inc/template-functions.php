@@ -29,6 +29,11 @@ add_action('init', function () {
 });
 
 add_filter('post_thumbnail_id', function ($thumbnail_id, $post) {
-    if ($thumbnail_id == false || $thumbnail_id == "") $thumbnail_id = get_option('dfi_image_id');
+    if ($thumbnail_id == false || $thumbnail_id == "" || !$thumbnail_id) {
+        $thumbnail_id = get_field('dfi_image_id', 'option');
+    }
+    if ($thumbnail_id == false || $thumbnail_id == "" || !$thumbnail_id) {
+        $thumbnail_id = get_option('dfi_image_id');
+    }
     return $thumbnail_id;
 }, 10, 2);
