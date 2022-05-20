@@ -185,6 +185,12 @@ span.stButton:first-child {
     width: 311px !important;
     object-fit: cover;
 }
+.width-24px{
+    width: 24px !important;
+    height: 24px !important;
+    margin: 10px 10px 15px 0px;
+    object-fit: cover;
+}
 
 
 /* css trang archive */
@@ -567,3 +573,469 @@ span.stButton:first-child {
 .btn[type=submit]:focus {
     outline: none;
 }
+/* css trang chi tiet san pham */
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvffS2-vw.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvefS2-vw.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvQfS0.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvffS2-vw.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvefS2-vw.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memhYa2wxmKQyNkiV50dulWP7s95AqZTzbvQfS0.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLh4vSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLhovSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLiIvS.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLh4vSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLhovSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLiIvS.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA72jCksAxljYm.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA72jCksExljYm.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA72jCks8xlg.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLh4vSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLhovSZSk.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%
+}
+
+@font-face {
+    font-family: 'Saira';
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/saira/v7/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLiIvS.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%
+}
+.vh-content.scrollHide {
+    height: 1130px;
+    overflow: hidden;
+}
+.fancybox-inner .well.box-support {
+    padding: 0 !important;
+    border: none;
+    box-shadow: none;
+}
+
+.well.box-support ul li .icon i {
+    position: relative;
+    top: 3px;
+}
+span.stButton * {
+    box-sizing: content-box;
+}
+
+span.stButton:first-child {
+    margin-left: 0;
+}
+
+.youtube {
+    background-color: #000;
+    margin-bottom: 0px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.youtube .play-button:hover {
+    background-color: #c00
+}
+
+.youtube img {
+    width: 100%;
+    top: -16.82%;
+    left: 0;
+    opacity: .7
+}
+
+.youtube .play-button {
+    width: 60px;
+    height: 40px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: .8;
+    border-radius: 6px
+}
+
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #fff
+}
+
+.youtube:hover {
+    background-color: #ccc
+}
+
+.youtube img,
+.youtube .play-button {
+    cursor: pointer
+}
+
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute
+}
+
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0)
+}
+
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+@media(max-width: 767px) {
+    .navbar-nav>li.menu-pc {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .navbar-nav>li.menu-mobile {
+        display: none;
+    }
+}
+.well.box-hotline {
+    background: none;
+    box-shadow: none;
+    padding: 10px 15px;
+}
+
+.box-hotline ul {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.box-hotline ul li {
+    flex: 1;
+}
+
+.box-hotline ul li i {
+    margin-right: 5px;
+    color: #337ab7;
+}
+
+.box-hotline ul li a {
+    color: #000;
+}
+
+@media (min-width: 510px) and (max-width: 767px) {
+    .box-hotline ul {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 509px) {
+    .box-hotline ul {
+        display: block;
+    }
+
+    .box-hotline ul li {
+        flex: 0;
+    }
+}
+main .category-detail .other-product .product-list.list3 ._item {
+    margin-bottom: 0;
+}
+.rel-document {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 30px;
+}
+
+.rel-document:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.rel-document ._item {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    width: 50%;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.rel-document ._item:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.rel-document ._item img {
+    width: 30%;
+    float: left;
+    padding: 3px;
+    border: 1px solid #eee;
+    margin-right: 15px;
+}
+
+@media(max-width: 600px) {
+    .rel-document ._item {
+        width: auto;
+        float: none;
+    }
+
+    .rel-document ._item img {
+        width: 100px;
+    }
+}
+.short-full {
+    float: right;
+    transition: .2s all ease-in-out;
+    position: absolute;
+    right: 7px;
+    top: 10px;
+    color: #999;
+}
+
+.collapsed .short-full {
+    transform: rotate(180deg);
+}
+
+.panel-default>.panel-heading {
+    position: relative;
+    background-color: #f5f9fa7a;
+}
+
+.panel-default>.panel-heading h4 {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: justify;
+}
+
+.panel-heading a {
+    display: block;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.panel-heading .star {
+    position: absolute;
+    left: 7px;
+    top: 9px;
+    font-size: 14px;
+    /*color: #0E62A0;*/
+    color: #999;
+}
+
+.accordion-list .panel {
+    margin-bottom: 5px;
+}
+
+.accordion-list .panel .panel-body {
+    font-size: 12px;
+}
+.product-detail .right img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.lSSlideOuter .lSPager.lSGallery img {
+    width: 86px;
+    height: 63px;
+}
+.well.relDownload {
+    background: none;
+}
+
+.relDownload ul {
+    margin: 0;
+}
+
+.relDownload li {
+    padding: 5px 0;
+    padding-right: 50px;
+    position: relative;
+    border-top: 1px dotted #ccc;
+    height: 32px;
+}
+
+.relDownload li:first-child {
+    border: none;
+}
+
+.relDownload li .btn-download {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.relDownload li .info {
+    overflow: hidden;
+}
+
+.relDownload li .info .tt {
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.relDownload li .info .desc {
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.box_style1 {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 15px 20px 10px;
+    Background: url('../../public/cuploads/images/baiviet/bg-skf-chinh-hang.jpg');
+    color: #000;
+}
+
+.box_style1 p {
+    margin-bottom: 7px;
+}
+.width-98px{
+    width : 98px !important;
+    height :22px !important;
+    object-fit: cover;
+}
+/* het css chi tiet san pham */
