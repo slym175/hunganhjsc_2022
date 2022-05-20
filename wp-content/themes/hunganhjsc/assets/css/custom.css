@@ -1038,4 +1038,19 @@ main .category-detail .other-product .product-list.list3 ._item {
     height :22px !important;
     object-fit: cover;
 }
+.width-750px{
+    width: 750px !important;
+    height: 51px !important;
+    object-fit: cover;
+}
+.width-360px{
+    width: 350px !important;
+    height: 63px !important;
+    object-fit: cover;
+}
+.width-172px{
+    width: 172px !important;
+    height: 128px !important;
+    object-fit: cover;
+}
 /* het css chi tiet san pham */

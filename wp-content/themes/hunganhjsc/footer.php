@@ -8,7 +8,7 @@
                 if(isset($skfChinhHang)){?>
                  <img class="lazyload" src="/wp-content/themes/hunganhjsc/assets/imgs/icons/icon-supportb90c.gif"
                      width="35" height="32">
-                <a href="" title="báo giá vòng bi SKF chính hãng"><?php  echo $skfChinhHang ?></a> -
+                <a href="" title="báo giá vòng bi SKF chính hãng"><?php  echo $skfChinhHang ?></a>
                 <?php }
                 ?>
                 <span class="dot" style="margin-left: 5px; margin-top: -4px;">
@@ -16,9 +16,9 @@
                 </span>
                 <?php $phone = get_field('hotline','option');
                 $phoneItem = explode(",", $phone);
-                if(isset($phone)){ ?>
+                if(isset($phoneItem)){ ?>
                     <?php foreach ($phoneItem as $k => $phone): ?>
-                        <?= $k !== 0 ? '-' : '' ?><a href="tel:<?= $phone ?>"><?= $phone ?></a>
+                      <?= $k !== 0 ? '-' : '' ?><a href="tel:<?= $phone ?>"><?= $phone ?>  </a>
                     <?php endforeach; ?>
 
                <?php } ?>
@@ -26,7 +26,7 @@
              
                <?php $email = get_field('email','options'); 
                if(isset($email)){?>
-                - Email: <a href="<?php echo $email ?>" rel="nofollow"><span
+               - Email: <a href="<?php echo $email ?>" rel="nofollow"><span
                             style="font-weight: 700;"><?php echo $email ?></span></a>
                <?php } ?>
 
@@ -157,14 +157,11 @@
                     'hide_empty' => false,
                 ));
                 if(isset($terms)){
-                    
-                }
-                foreach ($terms as $termItem) {
-                    ?>
-                    <?php $linkTag = get_term_link($termItem); ?>
-                    <a href="<?php echo $linkTag ?> "
-                       title="<?php echo $termItem->name ?>"><?php echo $termItem->name ?></a>
-                <?php } ?>
+                    foreach ($terms as $termItem) {
+                        $linkTag = get_term_link($termItem); ?>
+                        <a href="<?php echo $linkTag ?>" title="<?php echo $termItem->name ?>"><?php echo $termItem->name ?></a>
+                    <?php }
+                } ?>
 
             </div>
         </div>

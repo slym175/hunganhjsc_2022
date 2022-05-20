@@ -18,7 +18,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
+global $product;
 get_header(); ?>
 
 	<?php
@@ -32,12 +32,13 @@ get_header(); ?>
 	?>  
 	<div class="">
 		<?php  
-			$product = get_queried_object() ;
-			wp_reset_query();
-			// print_r($product);
-			global $product;
+			// print_r($product->get_id());
+			print_r (get_field('cau_hoi_thuong_gap',$product->get_id(),'option'));
+
 			$terms = get_the_terms( $product->id, 'product_cat' );	
 			foreach ( $terms as $nameCategory)
+			// NOTICE! Understand what this does before running. 
+			$result = woocommerce_output_related_products();  
 		?>
 
 		<div class="_breadcrumb">
@@ -53,7 +54,7 @@ get_header(); ?>
 						<a href="../vong-bi-skf.html" title="Vòng bi SKF"><?php echo $nameCategory->name ?></a>
 					</li>
 					<li class="active">
-						<?php echo $products->name ?>
+						<?php echo $product->name ?>
 					</li>
 				</ol>
 				<script type="application/ld+json">
@@ -349,25 +350,29 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 
 
 							<div class="well box-hotline">
-								<div class="btt text-uppercase"
-									style="font-size: 12px; margin-bottom: 10px; color: #999;">Hỗ trợ báo giá 24/7 -
-									Liên hệ với SKF Ngọc Anh để có báo giá tốt nhất tại thời điểm (Hotline / SMS /
-									Zalo)
-								</div>
+								<?php
+									$title = get_field('tieu_de_ho_tro_bao_gia','option');
+									if(isset($title)){?>
+										<div class="btt text-uppercase" style="font-size: 12px; margin-bottom: 10px; color: #999;">
+											<?php echo $title ?>
+										</div>
+								<?php } ?>
+								
 								<ul class="list-unstyled">
-									<li>
-										<i class="fas fa-phone-square"></i>
-										<a href="tel:096 123 8558">096.123.8558</a>
-									</li>
-									<li>
-										<i class="fas fa-phone-square"></i>
-										<a href="tel:033 999 5999">033.999.5999</a>
-									</li>
+								<?php $phone = get_field('hotline','option');
+									$phoneItem = explode(",", $phone);
+									if(isset($phone)){ ?>
+										<?php foreach ($phoneItem as $k => $phone): ?>
+											<?= $k !== 0 ? '' : '' ?>
+												<li>
+													<img src="<?php echo get_theme_file_uri('assets/imgs/images.png') ?>" style="width:15px ; height:15px">
+													<i class="fas fa-phone-square"></i>
+													<a href="tel:<?= $phone ?>"><?= $phone ?></a>
+												</li>
+										<?php endforeach; ?>
 
-									<li>
-										<i class="fas fa-phone-square"></i>
-										<a href="tel:0763 356 999">0763.356.999</a>
-									</li>
+								<?php } ?>
+									
 
 
 
@@ -394,10 +399,14 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 								giúp thông tin về vòng bi SKF chính hãng.
 
 							</div>
-							<div><a href="../../gioi-thieu.html"><img class="img-responsive"
-										src="../../public/assets/imgs/skf-chinh-hang.jpg"
-										title="Vòng bi SKF chính hãng" alt="Đại lý SKF tại Hà Nội" width="750"
-										height="52"></a>
+							<div>
+								<a href="">
+									<?php $img = get_field('banner_skf','option');
+										if(isset($img)){
+											echo wp_get_attachment_image($img,'full', false, array('class' => 'width-750px'));
+										}
+									?>
+								</a>
 							</div>
 							<br>
 
@@ -446,12 +455,6 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 								</div>
 
 							</div>
-
-							<br>
-
-							<br>
-
-							<br>
 						
 							<div class="other-product">
 								<div
@@ -473,7 +476,7 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 												<span class="tt" title="Vòng bi SKF 608">Vòng bi SKF 608</span>
 											</a>
 										</div> -->
-										<?php $result = woocommerce_output_related_products();  ?>
+									<?php $result = woocommerce_output_related_products();  ?>
 										
 										<div class="clearfix"></div>
 									</div>
@@ -482,75 +485,8 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 
 								</div>
 
-								<div id="carousel-example-generic"
-									class="carousel cnkh slide product-list list3 other-product mrg-btm-30 hidden-sm hidden-xs"
-									data-ride="carousel" data-interval="0" style="margin: 0">
-									<!-- Controls -->
-
-									<!-- Wrapper for slides -->
-									<div class="carousel-inner" role="listbox">
-										<div class="item active">
-
-											<div class="_row">
-												<div class="_item   item2 ">
-													<a rel="nofollow" href="Vong-bi-SKF-608.html"
-														title="Vòng bi SKF 608 chính hãng">
-														<div class="img"><img width="172" height="128"
-																src="../../public/uploads/images/6756/vong-bi-skf-608-300x224c.jpg"
-																alt="Vòng bi SKF 608"
-																title="Vòng bi SKF 608 chính hãng"></div>
-													</a>
-													<a href="Vong-bi-SKF-608.html"
-														title="Vòng bi SKF 608 chính hãng">
-														<span class="tt" title="Vòng bi SKF 608">Vòng bi SKF
-															608</span>
-													</a>
-												</div>
-												<div class="_item  item3  ">
-													<a rel="nofollow" href="Vong-bi-SKF-608-2ZC3.html"
-														title="Vòng bi SKF 608-2Z/C3 chính hãng">
-														<div class="img"><img width="172" height="128"
-																src="../../public/uploads/images/3201/vong-bi-608-2zc3-300x224c.jpg"
-																alt="Vòng bi SKF 608-2Z/C3"
-																title="Vòng bi SKF 608-2Z/C3 chính hãng"></div>
-													</a>
-													<a href="Vong-bi-SKF-608-2ZC3.html"
-														title="Vòng bi SKF 608-2Z/C3 chính hãng">
-														<span class="tt" title="Vòng bi SKF 608-2Z/C3">Vòng bi SKF
-															608-2Z/C3</span>
-													</a>
-												</div>
-												<div class="_item item4   item2 ">
-													<a rel="nofollow" href="Vong-bi-SKF-608-2Z.html"
-														title="Vòng bi SKF 608-2Z chính hãng">
-														<div class="img"><img width="172" height="128"
-																src="../../public/uploads/images/5096/vong-bi-608-2z-skf-2-300x224c.jpg"
-																alt="Vòng bi SKF 608-2Z"
-																title="Vòng bi SKF 608-2Z chính hãng"></div>
-													</a>
-													<a href="Vong-bi-SKF-608-2Z.html"
-														title="Vòng bi SKF 608-2Z chính hãng">
-														<span class="tt" title="Vòng bi SKF 608-2Z">Vòng bi SKF
-															608-2Z</span>
-													</a>
-												</div>
-												<div class="clearfix"></div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="_row">
-											</div>
-
-											<div class="clearfix"></div>
-										</div>
-									</div>
-
-
-								</div>
+							 
 							</div>
-
-
-
 
 
 							<!-- tai lieu lien quan -->
@@ -613,10 +549,16 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 
 						<div class="col-md-4 right">
 							<div style="background: #fff; line-height: 10px" class="text-center mrg-btm-15">
-								<a href="../../gioi-thieu.html">
-									<img src="../../public/assets/imgs/ngoc-anh-skf.png"
-										title="Đại lý ủy quyền SKF chính hãng" alt="Đại lý SKF chính hãng"
-										width="100%"></a>
+								<a href="">
+									<?php 
+										$img = get_field('site_file_mage','option');
+										if(isset($img)){
+											foreach($img as $imgItem){
+												echo wp_get_attachment_image($imgItem,'full',false,array('class'=>'width-360px'));
+											}
+										}
+									?>
+								</a>
 							</div>
 
 						
@@ -624,105 +566,34 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 							<div class="accordion-list" itemscope itemtype="https://schema.org/FAQPage"
 								style="padding:10px; color:#000; line-height:22px; text-align:justify; margin-bottom:20px; border-radius:3px; border:1px solid #c6d0d3;">
 								<h3 style="font-size: 13px; margin-top: 0; margin-bottom: 10px; line-height: 18px">
-
-									Vòng bi SKF 608-2RSH và những câu hỏi thường gặp
+									<?php echo $product->name ?> và những câu hỏi thường gặp
 								</h3>
-
-								<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"
-									class="panel panel-default">
-									<div class="panel-heading" role="tab" id="paq1">
-										<h4 itemprop="name" class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse"
-												data-parent="#accordion" href="#collapseOne" aria-expanded="false"
-												aria-controls="collapseOne">
-												<i class="short-full glyphicon glyphicon-menu-up"></i><span
-													class="star">★</span> Tại sao nên
-												mua Vòng bi SKF 608-2RSH tại SKF Ngọc Anh?</a>
-										</h4>
-									</div>
-									<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-										id="collapseOne" class="panel-collapse collapse" role="tabpanel"
-										aria-labelledby="paq1">
-										<div class="panel-body" itemprop="text"><b>✓ Trả lời:</b> SKF Ngọc Anh là
-											đại lý ủy quyền chính hãng của
-											SKF, chuyên phân phối các sản phẩm SKF chính hãng tại Việt Nam nên bạn
-											hoàn toàn yên tâm về giá bán và
-											chất lượng sản phẩm SKF chính hãng cũng như chế độ bảo hành.
+								<?php 
+								$cauHoi = get_field('cau_hoi_thuong_gap',$product->get_id(),'option');
+								if(isset($cauHoi)){
+									foreach($cauHoi as $key => $cauHoiItem){?>
+										<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"
+											class="panel panel-default">
+											<div class="panel-heading" role="tab" id="paq<?php echo $key?>">
+												<h4 itemprop="name" class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse"
+														data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+														aria-controls="collapseOne">
+														<i class="short-full glyphicon glyphicon-menu-up"></i><span
+															class="star">★</span> <?php echo $cauHoiItem['cau_hoi'] ?></a>
+												</h4>
+											</div>
+											<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
+												id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+												aria-labelledby="paq<?php echo $key?>">
+												<div class="panel-body" itemprop="text"><b>✓ Trả lời:</b> <?php echo $cauHoiItem['cau_tra_loi'] ?>
+												</div>
+											</div>
 										</div>
-									</div>
-								</div>
-
-								<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"
-									class="panel panel-default">
-									<div class="panel-heading" role="tab" id="paq2">
-										<h4 itemprop="name" class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse"
-												data-parent="#accordion" href="#collapseThree" aria-expanded="false"
-												aria-controls="collapseThree">
-												<i class="short-full glyphicon glyphicon-menu-up"></i><span
-													class="star">★</span> Làm sao phân biệt
-												được Vòng bi SKF 608-2RSH chính hãng?</a>
-										</h4>
-									</div>
-									<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-										id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-										aria-labelledby="paq2">
-										<div class="panel-body" itemprop="text"><b>✓ Trả lời:</b> Để phân biệt được
-											sản phẩm SKF chính hãng và Fake
-											(Nhái) đòi hỏi bạn phải có nhiều kinh nghiệm. Tuy nhiên nếu bạn không có
-											kinh nghiệm hãy sử dụng phần
-											mềm SKF Authenticate được cung cấp bởi SKF để giúp bạn phân biệt sản
-											phẩm chính hãng. Truy cập đường dẫn
-											dưới đây: <a href="http://check.ngocanh.com/"
-												target="_blank">check.ngocanh.com</a>
-										</div>
-									</div>
-								</div>
-
-								<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"
-									class="panel panel-default">
-									<div class="panel-heading" role="tab" id="heading5">
-										<h4 itemprop="name" class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse"
-												data-parent="#accordion" href="#collapse5" aria-expanded="false"
-												aria-controls="collapse5">
-												<i class="short-full glyphicon glyphicon-menu-up"></i><span
-													class="star">★</span> Mua hàng tại SKF
-												Ngọc Anh có đảm bảo không?</a>
-										</h4>
-									</div>
-									<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-										id="collapse5" class="panel-collapse collapse" role="tabpanel"
-										aria-labelledby="heading5">
-										<div class="panel-body" itemprop="text"><b>✓ Trả lời:</b> Bạn hoàn toàn yên
-											tâm về sản phẩm mà chúng tôi
-											phân phối. SKF Ngọc Anh cam kết hoàn tiền 100 lần nếu phát hiện hàng
-											giả, hàng nhái.
-										</div>
-									</div>
-								</div>
-								<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"
-									class="panel panel-default">
-									<div class="panel-heading" role="tab" id="heading6">
-										<h4 itemprop="name" class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse"
-												data-parent="#accordion" href="#collapse6" aria-expanded="false"
-												aria-controls="collapse6">
-												<i class="short-full glyphicon glyphicon-menu-up"></i><span
-													class="star">★</span> Sản phẩm mua tại
-												SKF Ngọc Anh có COCQ không?</a>
-										</h4>
-									</div>
-									<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-										id="collapse6" class="panel-collapse collapse" role="tabpanel"
-										aria-labelledby="heading6">
-										<div class="panel-body" itemprop="text"><b>✓ Trả lời:</b> Tất cả sản phẩm
-											SKF do chúng tôi phân phối đều có
-											COCQ bản gốc rõ ràng, Vui lòng liên hệ với chúng tôi để biết thêm chi
-											tiết.
-										</div>
-									</div>
-								</div>
+									<?php }
+								}
+								?>			
+							
 
 							</div>
 							<div class="news-view"
@@ -827,77 +698,93 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 
 
 
+							<?php $get_email = get_field('email','option');
+								if(isset($get_email)){ ?>
+									<div class="well hotline-right" align="center">
 
-							<div class="well hotline-right" align="center">
+									<li>E MAIL BÁO GIÁ SẢN PHẨM SKF</li>
 
-								<li>E MAIL BÁO GIÁ SẢN PHẨM SKF</li>
+									<div style="font-size:22px; color:#FF0004">
+										<strong><a href="mailto:info@ngocanh.com" rel="nofollow">
+											
+										<?php echo $get_email ?></a>
+										</strong>
+									</div>
+									</div>
+								<?php } ?>
+							
 
-								<div style="font-size:22px; color:#FF0004">
-									<strong><a href="mailto:info@ngocanh.com" rel="nofollow">info@ngocanh.com</a>
-									</strong></div>
-							</div>
+							<?php 
+								$getImgGiaoHang = get_field('gif_giao_hang','option');
+								if(isset($getImgGiaoHang)){?>
+								<div style="background: #fff; line-height: 10px" class="text-center mrg-btm-15">
+									<a href="">
+										<?php echo wp_get_attachment_image($getImgGiaoHang,'full',false,array('class'=>'width-150px'));?>
+									</a>
+								</div>
+							<?php } ?> 
+							
 
-
-							<div style="background: #fff; line-height: 10px" class="text-center mrg-btm-15">
-								<a href="../../huong-dan-mua-hang.html"><img
-										src="../../public/assets/imgs/giao-hang-toan-quoc.gif"
-										title="Giao hàng tận nơi" alt="Giao vòng bi SKF tận nơi" width="700px"
-										height="318px"></a>
-							</div>
-
-
-							<div class="box_style1">
-								<p>✅ Phân phối sản phẩm SKF chính hãng</p>
-								<p>✅ Đầy đủ giấy tờ CO,CQ gốc</p>
-								<p>✅ Bảo hành chính hãng</p>
-								<p>✅ Giá bán cạnh tranh nhất</p>
-								<p>✅ Dịch vụ sau bán bán hàng chuyên nghiệp</p>
-								<p>✅ Giao hàng toàn Quốc</p>
-								<p>✅ Hỗ trợ kỹ thuật 24/7</p>
-							</div>
+							<?php 
+								$getTieuDe = get_field('tieu_de_trang_chi_tiet_san_pham','option');
+								if(isset($getTieuDe)){ ?>
+								<div class="box_style1">
+									<p> <?php echo $getTieuDe ?> </p>
+								</div>
+								<?php }
+							?>
+						
 							<br>
 
 
-							<div style="background: #fff; line-height: 10px" class="text-center mrg-btm-15">
-								<a href="../../bao-gia-vong-bi-skf-chinh-hang.html"><img
-										src="../../public/assets/imgs/skf-telesale.jpg" class="img-responsive"
-										alt="báo giá vòng bi SKF chính hãng" title="báo giá vòng bi SKF chính hãng"
-										width="700px" height="124px"></a>
-							</div>
+							<?php 
+								$getImgBaoGia = get_field('anh_bao_gia','option');
+								if(isset($getImgBaoGia)){?>
+									<div style="background: #fff; line-height: 10px" class="text-center mrg-btm-15">
+										<a href="">
+											<?php  echo wp_get_attachment_image($getImgBaoGia,'full',false,array('class'=>'width-150px')); ?>
+										</a>
+									</div>
+								<?php } ?>
+							<?php
+								$getTitleMuaHang = get_field('mua_hang_tu_hung_anh','option');
+								if(isset($getTitleMuaHang)){?>
+									<div class="well list-icon" style="background: #ca0000; color: #ffffff;">
+										<div class="txt" align="justify">
+											<?php echo $getTitleMuaHang?>
+										</div>
+									</div>
+								<?php } ?>
+							
 
-
-
-
-							<div class="well list-icon" style="background: #ca0000; color: #ffffff;">
-								<div class="txt" align="justify">Mua hàng từ SKF Ngọc Anh để đảm bảo sản phẩm SKF
-									chính hãng. Tránh nguy cơ mua phải vòng bi SKF giả (fake) kém chất lượng.
+							<?php 
+							$getImgApp = get_field('anh_app','option');
+							if(isset($getImgApp)){?>
+								<div style="background: #fff; line-height: 10px" class="text-center mrg-btm-15">
+									<a href="">
+										<?php  echo wp_get_attachment_image($getImgApp,'full',false,array('class'=>'width-150px')); ?>
+									</a>
 								</div>
+							<?php } ?>		
+							
+							<?php 
+							$getImgBaoChi = get_field('anh_bao_chi_noi_ve_chung_toi','option');
+							if(isset($getImgBaoChi)){ ?>
 
-							</div>
+								<div style="background: #fff; line-height: 10px" class="text-center mrg-btm-15">
+									<a href="" target="_blank">
+									<?php  echo wp_get_attachment_image($getImgBaoChi,'full',false,array('class'=>'width-150px')); ?>
 
-
-							<div style="background: #fff; line-height: 10px" class="text-center mrg-btm-15">
-								<a href="../../kiem-tra-vong-bi-gia-skf.html"><img
-										src="../../public/assets/imgs/tra-cuu-skf-fake.png" class="img-responsive"
-										alt="Kiểm tra vòng bi SKF giả" border="0" title="Kiểm tra vòng bi SKF giả"
-										width="700px" height="185px"></a>
-							</div>
-
-
-
-
-							<div style="background: #fff; line-height: 10px" class="text-center mrg-btm-15">
-								<a href="../../bao-chi-noi-ve-chung-toi/index.html" target="_blank"><img
-										alt="Báo chí nói về SKF Ngọc Anh" class="img-responsive"
-										src="../../public/cuploads/images/baiviet/baochi.jpg" width="700px"
-										height="326px"></a>
-							</div>
+									</a>
+								</div>
+							<?php } ?>
 
 
-							<div class="news-view"
-								style="border-radius: 6px; border: 1px solid #eaeaea; padding: 15px; margin-bottom: 2px; background-color: #ffffff;">
+
+							<div class="news-view" style="border-radius: 6px; border: 1px solid #eaeaea; padding: 15px; margin-bottom: 2px; background-color: #ffffff;">
 
 								<div style="padding-bottom: 10px">
+									
 									<strong>SKF NGỌC ANH - Địa chỉ mua Vòng bi SKF 608-2RSH chính hãng, uy tín, giao
 										hàng toàn Quốc, Hỗ trợ 24/7</strong><br><br>
 									[ <strong>Đại lý vòng bi SKF tại Hà Nội</strong> ]
@@ -913,7 +800,8 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 								<iframe
 									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.307897096861!2d105.77836861493184!3d20.98029148602459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd438bcdd88228aa0!2zU0tGIE5n4buNYyBBbmggLSDEkOG6oWkgbMO9IHXhu7cgcXV54buBbiB2w7JuZyBiaSBTS0YgY2jDrW5oIGjDo25n!5e0!3m2!1svi!2s!4v1627809861876!5m2!1svi!2s"
 									width="100%" height="150" style="border:0;" allowfullscreen=""
-									loading="lazy"></iframe>
+									loading="lazy">
+								</iframe>
 
 
 							</div>
@@ -928,28 +816,19 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 					<div class="container">
 						<ul class="list-unstyled">
 							<li class="first">Hiển thị theo:</li>
-
-							<li><a href="../vong-bi-cau.html">Vòng bi cầu SKF</a></li>
-							<li><a href="../vong-bi-tu-lua.html">Vòng bi đỡ tự lựa SKF</a></li>
-							<li><a href="../vong-bi-do-chan.html">Vòng bi đỡ chặn SKF</a></li>
-							<li><a href="../vong-bi-tiep-xuc-bon-diem.html">Vòng bi tiếp xúc bốn điểm SKF</a></li>
-							<li><a href="../Vong-bi-tiep-xuc-goc-2-day.html">Vòng bi tiếp xúc góc 2 dãy</a></li>
-							<li><a href="../vong-bi-chan.html">Vòng bi chặn trục SKF</a></li>
-							<li><a href="../vong-bi-con.html">Vòng bi côn SKF</a></li>
-							<li><a href="../vong-bi-tang-trong.html">Vòng bi tang trống 2 dãy tự lựa</a></li>
-							<li><a href="../Vong-bi-tang-trong-chan-truc.html">Vòng bi tang trống chặn trục</a></li>
-							<li><a href="../vong-bi-mat-cau.html">Vòng bi mặt cầu SKF</a></li>
-							<li><a href="../vong-bi-dua-do.html">Vòng bi đũa đỡ SKF</a></li>
-							<li><a href="../vong-bi-yar.html">Vòng bi YAR</a></li>
-							<li><a href="../vong-bi-kim.html">Vòng bi kim</a></li>
-							<li><a href="../goi-do-skf-2.html">Gối đỡ SKF</a></li>
-							<li><a href="../vong-bi-xe-tai.html">Vòng bi xe tải</a></li>
-							<li><a href="../Phot-chan-dau-SKF.html">Phớt chặn dầu SKF</a></li>
-							<li><a href="../mo-skf.html">Mỡ bôi trơn SKF</a></li>
-							<li><a href="../dung-cu-skf-2.html">Dụng cụ bảo trì SKF</a></li>
-							<li><a href="../ong-lot-vong-bi.html">Ống lót vòng bi</a></li>
-							<li><a href="../Vong-bi-CARB-SKF.html">Vòng bi CARB SKF</a></li>
-							<li><a href="../vong-bi-xe-may.html">Vòng bi xe máy</a></li>
+							<?php $terms = get_terms(array(
+								'taxonomy' => 'product_tag',
+								'hide_empty' => false,
+							));
+							if(isset($terms)){
+								foreach ($terms as $termItem) {
+									$linkTag = get_term_link($termItem); ?>
+										<li>
+											<a href="<?php echo $linkTag ?>"><?php echo $termItem->name ?></a>
+										</li>
+								<?php }
+							} ?>
+						
 						</ul>
 					</div>
 				</div>
