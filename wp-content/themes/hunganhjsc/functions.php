@@ -39,6 +39,9 @@ function hunganhjsc_setup()
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_theme_support('woocommerce');
+    add_theme_support('wc-product-gallery-zoom');
+    add_theme_support('wc-product-gallery-lightbox');
+    add_theme_support('wc-product-gallery-slider');
 
     add_theme_support(
         'html5',
@@ -128,6 +131,8 @@ function hunganhjsc_scripts()
     wp_enqueue_script('hunganhjsc-twitter-bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js', array(), null, true);
     wp_enqueue_script('hunganhjsc-block-ui', _S_THEME_URL_URI . '/assets/js/jquery.blockUI.js', array(), null, true);
     wp_enqueue_script('hunganhjsc-custom', _S_THEME_URL_URI . '/assets/js/custom.js', array(), null, true);
+    wp_enqueue_script('hunganhjsc-fancybox', _S_THEME_URL_URI . '/assets/js/jquery.fancybox.js', array(), null, true);
+
 }
 
 add_action('wp_enqueue_scripts', 'hunganhjsc_scripts');
