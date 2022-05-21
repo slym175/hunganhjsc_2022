@@ -33,8 +33,6 @@ get_header(); ?>
 	<div class="">
 		<?php  
 			// print_r($product->get_id());
-			print_r (get_field('cau_hoi_thuong_gap',$product->get_id(),'option'));
-
 			$terms = get_the_terms( $product->id, 'product_cat' );	
 			foreach ( $terms as $nameCategory)
 			// NOTICE! Understand what this does before running. 
@@ -100,7 +98,7 @@ get_header(); ?>
 				<div class="container">
 					<div class="pull-left">
 						<h1 style="color: #005995;">
-							<a href="Vong-bi-SKF-608-2RSH.html" title="Vòng bi SKF 608-2RSH chính hãng"><?php echo $products->name ?></a>
+							<a href="Vong-bi-SKF-608-2RSH.html" title="Vòng bi SKF 608-2RSH chính hãng"><?php echo $product->name ?></a>
 						</h1>
 					</div>
 
@@ -149,32 +147,18 @@ get_header(); ?>
 
 							<div class="row top">
 								<div class="col-md-6" id="list-image">
+								<!-- hiển thị ảnh sản phẩm -->
+									<?php
+									/**
+									 * Hook: woocommerce_before_single_product_summary.
+									 *
+									 * @hooked woocommerce_show_product_sale_flash - 10
+									 * @hooked woocommerce_show_product_images - 20
+									 */
+									do_action( 'woocommerce_before_single_product_summary' );
+									?>
 
-									<ul class="list-unstyled" id="image-gallery">
-
-										<li
-											data-thumb="../../public/uploads/images/5935/vong-bi-skf-608-2rsh-720x530c.jpg">
-											<img width="720" height="530"
-												src="../../public/uploads/images/5935/vong-bi-skf-608-2rsh-720x530c.jpg"
-												alt="Vòng bi SKF 608-2RSH chính hãng" class="img-responsive" />
-										</li>
-
-										<li
-											data-thumb="../../public/uploads/images/5936/vong-bi-skf-608-2rsh-1-720x530c.jpg">
-											<img width="720" height="530"
-												src="../../public/uploads/images/5936/vong-bi-skf-608-2rsh-1-720x530c.jpg"
-												alt="Vòng bi SKF 608-2RSH chính hãng" class="img-responsive" />
-										</li>
-
-										<li
-											data-thumb="../../public/uploads/images/5937/vong-bi-skf-608-2rsh-2-720x530c.jpg">
-											<img width="720" height="530"
-												src="../../public/uploads/images/5937/vong-bi-skf-608-2rsh-2-720x530c.jpg"
-												alt="Vòng bi SKF 608-2RSH chính hãng" class="img-responsive" />
-										</li>
-
-
-									</ul>
+								<!-- end hiển thị ảnh sản phẩm -->
 
 
 								</div>
@@ -204,12 +188,12 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 
 										<div class="clearfix"></div>
 
-
-										<ul class="list-unstyled params">
+										
+										<!-- <ul class="list-unstyled params"> -->
 											<li class="btt">Thông số sản phẩm</li>
 											<?php echo $product->short_description ?>
 
-										</ul>
+										<!-- </ul> -->
 										<!--SP-->
 
 										<div class="stt-war">
@@ -339,13 +323,16 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 
 					
 
-
-							<div
-								style="padding: 7px; border-radius: 3px; border: 1px solid #ccc; background: #f5f9fa; font-size: 12px;  margin-top: 10px;">
-								Đừng lo về giá. Bạn chỉ cần cho hàng vào giỏ và đặt hàng Online. SKF Ngọc Anh sẽ gọi
-								lại để tư vấn kỹ hơn! Chúng tôi cam kết hoàn tiền gấp 500 lần nếu phát hiện hàng
-								giả, hàng nhái từ NGOCANH.COM - SKF Authorized Distributor.
-							</div>
+							<?php  
+							$dungLoVeGia = get_field('dung_lo_ve_gia','option');
+							if(isset($dungLoVeGia)){ ?>
+								<div
+									style="padding: 7px; border-radius: 3px; border: 1px solid #ccc; background: #f5f9fa; font-size: 12px;  margin-top: 10px;">			
+									<?php echo $dungLoVeGia; ?>
+								</div>
+							<?php }
+							?>
+						
 							<br>
 
 
@@ -370,12 +357,7 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 													<a href="tel:<?= $phone ?>"><?= $phone ?></a>
 												</li>
 										<?php endforeach; ?>
-
 								<?php } ?>
-									
-
-
-
 								</ul>
 							</div>
 
@@ -383,21 +365,13 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 							<div class="note" style="font-size: 11px">
 
 
-								<strong>Tại sao bạn nên mua Vòng bi SKF 608-2RSH tại SKF Ngọc Anh ?</strong><br>
-								SKF Ngọc Anh là Đại lý ủy quyền SKF tại Việt Nam (SKF Authorized Distributor). Tất
-								cả các
-								sản phẩm SKF được phân phối bởi SKF Ngọc Anh
-								đều
-								là sản phẩm chính hãng SKF, có đầy đủ giấy tờ chứng minh xuất xứ và chất lượng
-								(CO,CQ). Vui
-								lòng
-								sử dụng phần mềm <a href="../../kiem-tra-vong-bi-gia-skf.html">SKF Authenticate</a>
-								(miễn phí) để
-								tránh mua phải vòng bi SKF giả trôi nổi trên thị trường. Liên hệ với chúng tôi nếu
-								bạn cần
-								trợ
-								giúp thông tin về vòng bi SKF chính hãng.
-
+								<strong>Tại sao bạn nên mua <?php echo $product->name ?> tại SKF Hung Anh ?</strong><br>
+								<?php 
+									$tl = get_field('skf_ngoc_anh_la_dai_ly_uy_quyen_skf_tai_viet_nam','option');
+									if(isset($tl)){
+										echo $tl;
+									}
+								?>
 							</div>
 							<div>
 								<a href="">
@@ -498,41 +472,27 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 									BÀI VIẾT LIÊN QUAN</h3>
 								<br>
 								<div class="rel-document">
-									<div class="_item">
-										<img width="100" height="60"
-											src="../../public/uploads/images/4507/o-bi-skf-250x150c.jpg"
-											alt="Ổ lăn, cụm ổ lăn và ổ đỡ SKF" />
-										<a title="Ổ lăn, cụm ổ lăn và ổ đỡ SKF"
-											href="../../tai-lieu-vong-bi/O-lan-cum-o-lan-va-o-do-SKF.html">Ổ lăn,
-											cụm ổ lăn và ổ đỡ SKF</a>
-									</div>
-									<div class="_item">
-										<img width="100" height="60"
-											src="../../public/uploads/images/3960/thuat-ngu-o-lan1-250x150c.jpg"
-											alt="Các thuật ngữ về Vòng bi (ổ lăn) nguyên lý lựa chọn và các ứng dụng của vòng bi" />
-										<a title="Các thuật ngữ về Vòng bi (ổ lăn) nguyên lý lựa chọn và các ứng dụng của vòng bi"
-											href="../../tai-lieu-vong-bi/Cac-thuat-ngu-ve-Vong-bi-o-lan-nguyen-ly-lua-chon-va-cac-ung-dung-cua-vong-bi.html">Các
-											thuật ngữ về Vòng bi (ổ lăn) nguyên lý lựa chọn và các ứng dụng của vòng
-											bi</a>
-									</div>
+									<?php
+
+										   
+										//  print_r(get_posts(  array('numberposts' => 2 )));
+										 $posts = get_posts( array('numberposts' => 4));
+										 if(isset($posts)){
+											 foreach($posts as $ks => $post){?>
+												<div class="_item">
+													<?php echo get_the_post_thumbnail($post->ID, $size = 'post-thumbnail', array('style'=>'width:108px; height:52px') ) ?>
+													<a title="<?php echo $post->post_title ?>"
+														href="<?php echo get_post_permalink($post->ID) ?>"><?php echo $post->post_title ?></a>
+											 </div>
+											 <?php }
+										 }
+
+										
+									?>
+
+								
 									<div class="clearfix"></div>
-									<div class="_item">
-										<img width="100" height="60"
-											src="../../public/uploads/images/4782/phan-biet-vong-bi-xe-may-skf-gia-250x150c.jpg"
-											alt="Cách  phân biệt và kiểm tra vòng bi xe máy SKF chính hãng" />
-										<a title="Cách  phân biệt và kiểm tra vòng bi xe máy SKF chính hãng"
-											href="../../tai-lieu-vong-bi/Cach-phan-biet-va-kiem-tra-vong-bi-xe-may-SKF-chinh-hang.html">Cách
-											phân biệt và kiểm tra vòng bi xe máy SKF chính hãng</a>
-									</div>
-									<div class="_item">
-										<img width="100" height="60"
-											src="../../public/uploads/images/4861/vong-bi-6310-skf-250x150c.jpg"
-											alt="Trên tay vòng bi 6310 SKF chính hãng - Deep groove ball bearings SKF 6310" />
-										<a title="Trên tay vòng bi 6310 SKF chính hãng - Deep groove ball bearings SKF 6310"
-											href="../../tai-lieu-vong-bi/Tren-tay-vong-bi-6310-SKF-chinh-hang-Deep-groove-ball-bearings-SKF-6310.html">Trên
-											tay vòng bi 6310 SKF chính hãng - Deep groove ball bearings SKF 6310</a>
-									</div>
-									<div class="clearfix"></div>
+
 								</div>
 
 							</div>
@@ -599,7 +559,9 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 							<div class="news-view"
 								style="border-radius: 6px; border: 1px solid #eaeaea; padding: 2px; margin-bottom: 2px; background-color: #ffffff;">
 								<div class="youtube" data-embed="O7ScJxaz8Ww">
-									<div class="play-button"></div>
+									<div class="play-button">
+										
+									</div>
 								</div>
 							</div>
 							<br /><br />
@@ -782,20 +744,31 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 
 
 							<div class="news-view" style="border-radius: 6px; border: 1px solid #eaeaea; padding: 15px; margin-bottom: 2px; background-color: #ffffff;">
-
 								<div style="padding-bottom: 10px">
+									<?php $getHungAnh2 = get_field('hung_anh_skf_2','option') ;
+									if(isset($getHungAnh2)){?>
+										<strong> <?php echo $getHungAnh2 ?></strong><br><br>
+									<?php }	
+									?>							
+								
+									<?php $chi_nhanh = get_field('chi_nhanh','option') ;
+									if(isset($chi_nhanh)){
+										foreach ($chi_nhanh as $keyChiNhanh => $valueChiNhanh){?>
+											[ <strong><?php echo  $valueChiNhanh['ten'] ?></strong> ]
+											<br><a href="https://g.page/r/CaCKIojdvDjUEAE" target="_blank"
+												rel="nofollow"><span style="color:#000000"><?php echo $valueChiNhanh['dia_chi'] ?></span></a>
+											<br>
+											Tel: <a href="tel:024 85 865 866" rel="nofollow">(024) 85 865 866</a>
+											<br>Hotline: <a href="tel:<?php echo $valueChiNhanh['sdt'] ?>" rel="nofollow"><?php echo $valueChiNhanh['sdt'] ?></a> - <br>
+										
+										<?php } } ?>	
 									
-									<strong>SKF NGỌC ANH - Địa chỉ mua Vòng bi SKF 608-2RSH chính hãng, uy tín, giao
-										hàng toàn Quốc, Hỗ trợ 24/7</strong><br><br>
-									[ <strong>Đại lý vòng bi SKF tại Hà Nội</strong> ]
-									<br><a href="https://g.page/r/CaCKIojdvDjUEAE" target="_blank"
-										rel="nofollow"><span style="color:#000000">LK 01.10, Liền kề Tổ 9 Mỗ Lao,
-											Phường Mộ Lao, Hà Đông, Hà Nội</span></a>
-									<br>
-									Tel: <a href="tel:024 85 865 866" rel="nofollow">(024) 85 865 866</a>
-									<br>Hotline: <a href="tel:096 123 8558" rel="nofollow">096 123 8558</a> - <a
-										href="tel:033 999 5999" rel="nofollow">033 999 5999</a><br>
-									Email: <a href="mailto:info@ngocanh.com" rel="nofollow">info@ngocanh.com</a>
+									<?php
+										$email  = get_field('email','option');
+										if(isset($email)){?>
+											Email: <a href="mailto:<?php echo $email ?>" rel="nofollow"><?php echo $email ?></a>
+										<?php }?>
+								
 								</div>
 								<iframe
 									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.307897096861!2d105.77836861493184!3d20.98029148602459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd438bcdd88228aa0!2zU0tGIE5n4buNYyBBbmggLSDEkOG6oWkgbMO9IHXhu7cgcXV54buBbiB2w7JuZyBiaSBTS0YgY2jDrW5oIGjDo25n!5e0!3m2!1svi!2s!4v1627809861876!5m2!1svi!2s"
@@ -859,5 +832,5 @@ font-size: 13px;"><?php echo $nameCategory->name ?></span></a>
 
 <?php
 get_footer();
-
-/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
+?>
+<!-- /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */ -->

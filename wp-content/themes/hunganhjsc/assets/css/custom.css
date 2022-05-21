@@ -1053,4 +1053,126 @@ main .category-detail .other-product .product-list.list3 ._item {
     height: 128px !important;
     object-fit: cover;
 }
+#list-image .woocommerce-product-gallery .woocommerce-product-gallery--with-images .woocommerce-product-gallery--columns-4 .images .flex-control-nav .flex-control-thumbs{
+	display: flex !important;
+	list-style: none;
+	padding: 10px 10px 0px 0px !important;
+}
+#list-image .woocommerce-product-gallery .flex-control-nav{
+	display: flex !important;
+	list-style: none;
+	padding: 10px 10px 0px 0px !important;
+}
+
+#list-image .onsale{
+    display: none;
+}
+
+#list-image .woocommerce-product-gallery .woocommerce-product-gallery__trigger.emoji{
+    display: none;
+}
+
 /* het css chi tiet san pham */
+
+/* css trang catalog */
+@media (min-width: 1024px) {
+    main .list-category {
+        margin-top: 30px;
+    }
+}
+
+main .list-category .cat:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+main .list-category .clearfix3 {
+    clear: both;
+    display: block;
+}
+
+@media (max-width: 767px)and (min-width: 630px) {
+    main .list-category .clearfix2 {
+        clear: both;
+        display: block;
+    }
+
+    main .list-category .clearfix3 {
+        display: none;
+        clear: none;
+    }
+
+    main .list-category .cat .txt {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 629px) {
+    main .list-category .cat {
+        margin-bottom: 28px;
+    }
+
+    main .list-category .cat.col-xs-6 {
+        width: 100%;
+        float: none;
+    }
+
+    main .list-category .cat .txt {
+        font-size: 13px;
+    }
+}
+.download-list .item {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    padding-right: 30px;
+}
+
+.download-list .item.col2 {
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.download-list .item .inner {
+    border-bottom: 1px dotted #ccc;
+    position: relative;
+    padding-right: 50px;
+    min-height: 56px;
+}
+
+.download-list .item .inner .tt {
+    padding: 0 0 5px;
+    margin: 0;
+    font-size: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+
+.download-list .item .inner .btn {
+    position: absolute;
+    right: 0;
+}
+
+.download-list .item .inner p {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 991px) {
+    .download-list .item {
+        width: auto;
+        float: none;
+        padding-right: 15px;
+    }
+
+    .download-list .item.col2 {
+        padding-left: 15px;
+    }
+}
+/* end css catalog */

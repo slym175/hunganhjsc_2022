@@ -275,7 +275,12 @@
                             ),
                         ),
                         'view' => 'template-parts/content/vc_map_templates/introduce/section1'
-                )
+                    ),
+                    'catalogue' => array(
+                        'name' => 'Catalogue',
+                        'attr' => array(),
+                        'view' => 'template-parts/content/vc_map_templates/catalogue/main'
+                    )
                     );
         }
 
