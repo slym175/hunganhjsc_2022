@@ -24,7 +24,7 @@ if ( $related_products ) : ?>
 	<section class="related products">
 
 		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
+		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Sản phẩm liên quan', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>
@@ -34,13 +34,24 @@ if ( $related_products ) : ?>
 		<?php woocommerce_product_loop_start(); ?>
 
 			<?php foreach ( $related_products as $related_product ) : ?>
-
+				<?php
+					 ?>
+					<div class="_item   item2 ">
+						<a rel="nofollow" href="Vong-bi-SKF-608.html" title="Vòng bi SKF 608 chính hãng">
+							<div class="img">
+								<?php echo wp_get_attachment_image($related_product->image_id,'full',false,array('class' => 'width-172px')) ?>
+							</div>
+						</a>
+						<a href="<?php  echo get_the_permalink($related_product->get_id()); ?>" title="Vòng bi SKF 608 chính hãng">
+							<span class="tt" title="Vòng bi SKF 608"><?php echo ($related_product->name);?></span>
+						</a>
+					</div>
 					<?php
-					$post_object = get_post( $related_product->get_id() );
+					// $post_object = get_post( $related_product->get_id() );
 
-					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
+					// setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
 
-					wc_get_template_part( 'content', 'product' );
+					// wc_get_template_part( 'content', 'product' );
 					?>
 
 			<?php endforeach; ?>
