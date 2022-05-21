@@ -1038,4 +1038,12 @@ main .category-detail .other-product .product-list.list3 ._item {
     height :22px !important;
     object-fit: cover;
 }
+.width-125px{
+    width: 15px;
+}
+.width-img-footer{
+    width: 125px !important;
+    height: 47px !important;
+}
+
 /* het css chi tiet san pham */
