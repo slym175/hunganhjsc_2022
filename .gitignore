@@ -17,6 +17,10 @@
 /wp-*.php
 /xmlrpc.php
 
+#ide
+/.idea
+/.vscode
+
 # Configuration
 wp-config.php
 

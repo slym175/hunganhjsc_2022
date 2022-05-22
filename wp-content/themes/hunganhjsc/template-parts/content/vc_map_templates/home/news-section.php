@@ -7,7 +7,7 @@
                     <h2 class="box-heading news text-uppercase" style="font-weight:700; color:#000">
                         <a href="<?= $link['url'] ? $link['url'] : 'javascript:void(0)' ?>"><?= isset($args['title']) && $args['title'] ? $args['title'] : 'Tin tức' ?></a>
                     </h2>
-                    <ul class="list-item list-unstyled">
+                    <ul class="list-item list-unstyled" style="margin: 0">
                         <?php
                         $argvs = array(
                             'numberposts' => 2,

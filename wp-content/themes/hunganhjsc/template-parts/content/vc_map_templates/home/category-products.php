@@ -20,8 +20,11 @@ if ($category_products) {
         <div class="row">
             <?php foreach ($category_list as $key => $item) {
                 //lấy ảnh của category
-                $thumbnail_id = get_term_meta($item->term_id, 'thumbnail_id', true);
+                $thumbnail_id = get_term_meta( $item->term_id, 'thumbnail_id', true );
                 $image = wp_get_attachment_image($thumbnail_id, 'thumbnail', false, array('class' => 'width-50px'));
+                if(!$thumbnail_id) {
+                    $image = wc_placeholder_img('woocommerce_thumbnail', array('class' => 'width-50px'));
+                }
                 $link = get_term_link($item, 'product_cat');
                 if (!$link || $link instanceof WP_Error) {
                     $link = 'javascript:void(0)';

@@ -50,7 +50,7 @@ jQuery(function () {
         var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/sddefault.jpg";
         var image = new Image();
         image.src = source;
-        image.addEventListener("load", function() {
+        image.addEventListener("load", function () {
             youtube[i].appendChild(image);
         });
         youtube[i].addEventListener("click", function () {
@@ -203,17 +203,6 @@ jQuery("iframe").each(function () {
 });
 
 //js trang chi tiet san pham
-var Tawk_API = Tawk_API || {},
-Tawk_LoadStart = new Date();
-(function () {
-var s1 = document.createElement("script"),
-    s0 = document.getElementsByTagName("script")[0];
-s1.async = true;
-s1.src = 'https://embed.tawk.to/5cd705b32846b90c57ae052f/default';
-s1.charset = 'UTF-8';
-s1.setAttribute('crossorigin', '*');
-s0.parentNode.insertBefore(s1, s0);
-})();
 jQuery(function () {
     jQuery.ajaxSetup({
         headers: {
@@ -293,6 +282,7 @@ function init() {
         }
     }
 }
+
 window.onload = init;
 jQuery(".vh-content img").each(function () {
     jQuery(this).attr("src", jQuery(this).attr("src").replace("http://", "https:///"));
@@ -320,6 +310,7 @@ jQuery("iframe").each(function () {
     jQuery(this).attr("data-src", jQuery(this).attr("src"));
     jQuery(this).removeAttr("src");
 });
+
 function blockUI(msg) {
     jQuery.blockUI({
         message: msg,
@@ -476,7 +467,7 @@ jQuery(function () {
             jQuery(this).append(
                 jQuery(
                     '<div class="more-view-shadown"><span class="btn btn-default">Xem thêm</span> </div>'
-                    )
+                )
             );
         }
     });

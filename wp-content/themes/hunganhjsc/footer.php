@@ -9,7 +9,7 @@
                     ?>
                     <img class="lazyload" src="/wp-content/themes/hunganhjsc/assets/imgs/icons/icon-supportb90c.gif"
                          width="35" height="32">
-                    <a href="" title="báo giá vòng bi SKF chính hãng"><?php echo $skfChinhHang ?></a> -
+                    <a href=""><?php echo $skfChinhHang ?></a> -
                 <?php }
                 ?>
                 <span class="dot" style="margin-left: 5px; margin-top: -4px;">
@@ -22,17 +22,13 @@
                         <?= $k !== 0 ? '-' : '' ?><a href="tel:<?= $phone ?>"><?= $phone ?></a>
                     <?php endforeach; ?>
 
-                <?php } ?>
-
-
-                <?php $email = get_field('email', 'options');
+                <?php }
+                $email = get_field('email', 'options');
                 if (isset($email)) {
                     ?>
                     - Email: <a href="<?php echo $email ?>" rel="nofollow"><span
                                 style="font-weight: 700;"><?php echo $email ?></span></a>
                 <?php } ?>
-
-
             </div>
         </div>
         <div class="_ficons">
@@ -42,7 +38,6 @@
                     if (isset($spChinhHang)) {
                         foreach ($spChinhHang as $spChinhHangItem) {
                             ?>
-
                             <div class="col-sm-3 col-xs-6 col">
                                     <span class="icon">
                                         <img class="lazyload" src="<?php echo $spChinhHangItem['anh']['url'] ?>"
@@ -78,9 +73,7 @@
                                     <?php echo wp_get_attachment_image($idItem, 'full', false, array('class' => 'width-311px')); ?>
                                 </a>
                             </div>
-                        <?php }
-                        ?>
-
+                        <?php } ?>
                     <?php endif; ?>
 
                     <div class="info">

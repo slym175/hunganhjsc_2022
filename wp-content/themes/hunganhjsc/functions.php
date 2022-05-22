@@ -57,7 +57,7 @@ function hunganhjsc_setup()
     );
 
     add_theme_support('customize-selective-refresh-widgets');
-    add_image_size('small-thumbnail', 50, 50); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
+    add_image_size('small-thumbnail', 50, 50);
     add_theme_support(
         'custom-logo',
         array(

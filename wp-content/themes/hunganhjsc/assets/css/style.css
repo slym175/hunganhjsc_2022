@@ -391,7 +391,8 @@ footer .right .social-icons a:hover {
 .newsBox .box-content.video .frame {
     padding: 5px 5px 2px;
     background: #fff;
-    border: 1px solid #eee
+    border: 1px solid #eee;
+    margin-top: 15px;
 }
 
 .newsBox .box-content.video a.title {
